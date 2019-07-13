@@ -12,17 +12,24 @@
       </div>
       <nav class="page-nav">
         <ul class="page-nav__list">
-          <li class="page-nav__item"><a href="index.html">Главная</a></li>
-          <li class="page-nav__item"><a href="photo.html">Фото и видео</a></li>
-          <li class="page-nav__item"><a href="form.html">Форма отзыва</a></li>
           <li class="page-nav__item">
-            <a href="https://htmlacademy.ru">HTML academy</a>
+            <a class="page-nav__link" href="index.html">Главная</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="photo.html">Фото и видео</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="form.html">Форма отзыва</a>
+          </li>
+          <li class="page-nav__item">
+            <a class="page-nav__link" href="https://htmlacademy.ru"
+              >HTML academy</a
+            >
           </li>
         </ul>
       </nav>
       <a class="page-nav__toggle" href="#">Toggle</a>
     </header>
-
     <main class="page-main">
       <section class="promo promo--cut">
         <div class="promo__wrapper">
@@ -32,7 +39,6 @@
           </div>
         </div>
       </section>
-
       <section class="gallery">
         <div class="gallery__wrapper">
           <div class="gallery__intro">
@@ -52,7 +58,6 @@
               </p>
             </div>
           </article>
-
           <article class="gallery__item photo">
             <img src="http://placehold.it/350x100" />
             <div class="photo__description">
@@ -63,7 +68,6 @@
               </p>
             </div>
           </article>
-
           <article class="gallery__item photo">
             <img src="http://placehold.it/350x100" />
             <div class="photo__description">
@@ -74,7 +78,6 @@
               </p>
             </div>
           </article>
-
           <article class="gallery__item photo">
             <img src="http://placehold.it/350x100" />
             <div class="photo__description">
@@ -87,7 +90,6 @@
           </article>
         </div>
       </section>
-
       <section class="video">
         <h2 class="visually-hidden">Видео</h2>
         <div class="video__wrapper">
@@ -108,46 +110,45 @@
         </div>
       </section>
     </main>
-
     <footer class="page-footer">
-      <b class="page-footer__tag">#VISITSEDONA</b>
-      <ul class="page-footer__socials socials">
-        <li class="socials__item social">
-          <a href="#" class="social__link" target="_blank">
+      <span class="page-footer__tag">#visitsedona</span>
+      <ul class="page-footer__social social">
+        <li class="social__item">
+          <a
+            href="#"
+            class="social__link social__link--twitter"
+            target="_blank"
+          >
             <span class="visually-hidden">Twitter</span>
-            <img src="http://placehold.it/100x100" />
           </a>
         </li>
-
-        <li class="socials__item social">
+        <li class="social__item">
           <a
             href="https://facebook.com/VisitSedona/"
-            class="social__link"
+            class="social__link social__link--facebook"
             target="_blank"
           >
             <span class="visually-hidden">Facebook</span>
-            <img src="http://placehold.it/100x100" />
           </a>
         </li>
-
-        <li class="socials__item social">
+        <li class="social__item">
           <a
             href="https://www.youtube.com/watch?v=_EuiMYpdvoc"
-            class="social__link"
+            class="social__link social__link--youtube"
             target="_blank"
           >
             <span class="visually-hidden">Youtube</span>
-            <img src="http://placehold.it/100x100" />
           </a>
         </li>
       </ul>
-
-      <p class="page-footer__copyrights">
-        Разработано
-        <a class="page-footer__copyright-link" href="#">
-          <span class="visually-hidden">HTML Academy</span>
-        </a>
-      </p>
+      <div class="page-footer__copyright copyright">
+        <p class="page-footer__copyrights">
+          Разработано
+          <a class="page-footer__copyright-link" href="#">
+            <span class="visually-hidden">HTML Academy</span>
+          </a>
+        </p>
+      </div>
     </footer>
   </body>
 </html>

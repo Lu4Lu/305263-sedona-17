@@ -12,10 +12,10 @@
         </div>
         <nav class="page-nav">
             <ul class="page-nav__list">
-              <li class="page-nav__item"><a href="index.html">Главная</a></li>
-              <li class="page-nav__item"><a href="photo.html">Фото и видео</a></li>
-              <li class="page-nav__item"><a href="form.html">Форма отзыва</a></li>
-              <li class="page-nav__item"><a href="https://htmlacademy.ru">HTML academy</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="index.html">Главная</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="photo.html">Фото и видео</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="form.html">Форма отзыва</a></li>
+              <li class="page-nav__item"><a class="page-nav__link" href="https://htmlacademy.ru">HTML academy</a></li>
             </ul>
         </nav>
         <a class="page-nav__toggle" href="#">Toggle</a>
@@ -89,74 +89,62 @@
                         </fieldset>
 
                     <fieldset class="review__element review__sights">
-
                         <legend class="review__title">Посещенные 
                                 достопримечательности:</legend>
-                
                         <label class="review__sight sight-checkbox sight-checkbox--large" for="sight-bridge">
                             <input type="checkbox" name="sight-bridge" value="bridge" id="sight-bridge" class="sight-input" checked>
                             <span>Мост Дьявола</span>
                         </label>
-                
                         <label class="review__sight sight-checkbox sight-checkbox--large" for="sight-mountain">
                             <input type="checkbox" name="sight-mountain" value="mountain" id="sight-mountain" class="sight-input" checked>
                             <span>Гора-Колокол</span>
                         </label>
-                
                         <label class="review__sight sight-checkbox sight-checkbox--large" for="sight-park">
                             <input type="checkbox" name="sight-park" value="park" id="sight-park" class="sight-input" checked>
                             <span>Слайд-парк</span>
                         </label>
-                
                         <label class="review__sight sight-checkbox sight-checkbox--large" for="sight-rocks">
                             <input type="checkbox" name="sight-rocks" value="rocks" id="sight-rocks" class="sight-input">
                             <span>Красные скалы</span>
                         </label>
                         </fieldset>
-
                     <fieldset class="review__element review__comment">
                         <legend class="review__title">Опишите свои эмоции:</legend>
                         <p class="review__item">
                             <textarea id="comment" name="comment" placeholder="Опишите подробно все свои восторги "></textarea>
                         </p>
                     </fieldset>
-
                     <button class="btn btn--request" type="submit">Отправить заявку</button>
                 </form>
             </div>
         </section>
     </main>
     <footer class="page-footer">
-            <b class="page-footer__tag">#VISITSEDONA</b>
-            <ul class="page-footer__socials socials">
-    
-                <li class="socials__item social">
-                <a href="#" class="social__link" target="_blank">
-                    <span class="visually-hidden">Twitter</span>
-                    <img src="http://placehold.it/100x100">
+        <span class="page-footer__tag">#visitsedona</span>
+        <ul class="page-footer__social social">
+          <li class="social__item">
+            <a href="#" class="social__link social__link--twitter" target="_blank">
+              <span class="visually-hidden">Twitter</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://facebook.com/VisitSedona/" class="social__link social__link--facebook" target="_blank">
+              <span class="visually-hidden">Facebook</span>
+            </a>
+          </li>
+          <li class="social__item">
+            <a href="https://www.youtube.com/watch?v=_EuiMYpdvoc" class="social__link social__link--youtube" target="_blank">
+              <span class="visually-hidden">Youtube</span>
+            </a>
+          </li>
+        </ul>
+        <div class="page-footer__copyright copyright">
+          <p class="page-footer__copyrights">Разработано
+              <a class="page-footer__copyright-link" href="#">
+                  <span class="visually-hidden">HTML Academy</span>
                 </a>
-                </li>
-    
-                <li class="socials__item social">
-                <a href="https://facebook.com/VisitSedona/" class="social__link" target="_blank">
-                    <span class="visually-hidden">Facebook</span>
-                    <img src="http://placehold.it/100x100">
-                </a>
-                </li>
-    
-                <li class="socials__item social">
-                <a href="https://www.youtube.com/watch?v=_EuiMYpdvoc" class="social__link" target="_blank">
-                    <span class="visually-hidden">Youtube</span>
-                    <img src="http://placehold.it/100x100">
-                </a>
-                </li>
-            </ul>
-    
-            <p class="page-footer__copyrights">Разработано
-                <a class="page-footer__copyright-link" href="#">
-                    <span class="visually-hidden">HTML Academy</span>
-                    </a>
-            </p>
+          </p>
+        </div>
     </footer>
     </body>
 </html>

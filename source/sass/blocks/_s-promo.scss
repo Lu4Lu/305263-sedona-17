@@ -1,0 +1,28 @@
+.promo {
+    height: 390px;
+    object-fit: contain;
+    padding: 0;
+    text-align: center;
+
+    h1,
+    b,
+    p {
+      font-family: $font-family-sans-serif;
+      color: $s-white;
+      font-weight: 400;
+    }
+
+    .promo__wrapper {
+        min-height: 390px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+        background-image: url(../img/bg-back-mobile@1x.jpg);
+    }
+
+    .promo__logo {
+        margin-top: 90px;
+        width: 280px;
+        height: 215px;
+    }
+
+}

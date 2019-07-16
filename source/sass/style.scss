@@ -1,11 +1,11 @@
-@import "_normalize.scss";
+// @import "_normalize.scss";
 
-// // variables
-// @import "_ce-variables.scss";
+// variables
+@import "_s-variables.scss";
 
-// // Custom styling
-// @import "_ce-utilities.scss";
-
-body { 
-    background: tomato; 
-};
+// Custom styling
+@import "_s-utilities.scss";
+@import "_s-type.scss";
+@import "blocks/_s-promo.scss";
+@import "blocks/_s-reasons.scss";
+@import "blocks/_s-booking.scss";

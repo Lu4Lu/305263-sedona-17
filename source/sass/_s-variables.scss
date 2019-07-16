@@ -1,0 +1,85 @@
+// Custom Variables
+
+// Table of Contents
+//
+// Colors
+// Options
+// Custom scale
+// Typography
+// Forms
+// Spacing
+// Grid columns
+// Components general
+// Navbar
+// Forms
+// Cards
+
+// Colors
+//
+$s-white: #ffffff;
+
+$s-gray: #f2f2f2;
+$s-gray-darker: #e5e5e5;
+$s-gray-darkest: #333333;
+
+$s-blue: #81b3d2;
+$s-btn-blue-hover: #889ec0;
+$s-btn-blue-down: #5498bd;
+$s-btn-disabled: #e5e5e5;
+
+$s-text-black: #333333;
+$s-text-black-lighter: #804e43;
+$s-text-black-lightest: rgba(118, 99, 87, 0.3);
+
+
+// Margins
+//
+$margin-5: 5px;
+$margin-10: 10px;
+$margin-15: 15px;
+$margin-20: 20px;
+$margin-25: 25px;
+$margin-30: 30px;
+$margin-35: 35px;
+$margin-40: 40px;
+$margin-85: 85px;
+$margin-105: 105px;
+$margin-170: 170px;
+$margin-275: 275px;
+$margin-445: 445px;
+$margin-720: 720px;
+
+// Typography
+//
+$font-family-sans-serif: "PTSans", helvetica, arial, sans-serif !default;
+$font-family-bold: "PTSansBold";
+$font-family-text: arial, sans-serif;
+
+$font-size-root: 14px !default;
+$font-size-root-unitless: 14; // Do the (rem) math with the scale
+
+$font-size-h1: 38px;
+$font-size-h2: 24px;
+$font-size-h3: $font-size-root;
+$font-size-18px: 18px;
+$font-size-12px: 12px;
+
+$font-size-b: $font-size-18px;
+
+$button-text: $font-size-18px;
+
+$line-height: 1.44;
+
+// // Forms
+//
+$checkbox-size: 30px;
+$input-padding: 15px;
+
+$input-border-color: $s-gray-darker;
+$input-btn-border-width: 1px !default; // For form controls and buttons
+
+// Breakpoints
+//
+$mobile-width: 320px;
+$tablet-width: 788px;
+$desktop-width: 1300px;

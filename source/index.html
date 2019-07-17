@@ -7,18 +7,29 @@
   </head>
   <body>
     <header class="page-header">
-      <div class="page-header__logo  logo">
-          <img src="http://placehold.it/150x100">
-      </div>
       <nav class="page-nav">
-          <ul class="page-nav__list">
-            <li class="page-nav__item"><a class="page-nav__link" href="index.html">Главная</a></li>
-            <li class="page-nav__item"><a class="page-nav__link" href="photo.html">Фото и видео</a></li>
-            <li class="page-nav__item"><a class="page-nav__link" href="form.html">Форма отзыва</a></li>
-            <li class="page-nav__item"><a class="page-nav__link" href="https://htmlacademy.ru">HTML academy</a></li>
+          <ul class="page-nav__list site-list">
+            <li class=" site-list__item"><a class="site-list__link" href="index.html">Главная</a></li>
+            <li class=" site-list__item"><a class="site-list__link" href="photo.html">Фото и видео</a></li>
+            <li class="site-list__item site-list__item--active logo">
+							<a class="logo__link">
+								<picture>
+									<source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
+									<source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
+									<img src="img/logo-sedona-mobile.svg" alt="Герб Седоны" width="188" height="96" class="logo__image">	
+								</picture>
+							</a>
+							<a type="button" class="site-list__toggle">
+								<img class="reason
+                __photo" src="img/icon-cross.svg" alt="Меню"></span>
+								<span class="visually-hidden">Меню</span>
+              </a>
+						</li>
+            <li class=" site-list__item"><a class="site-list__link" href="form.html">Форма отзыва</a></li>
+            <li class=" site-list__item"><a class="site-list__link" href="https://htmlacademy.ru">HTML academy</a></li>
           </ul>
       </nav>
-      <a class="page-nav__toggle" href="#">Toggle</a>
+      <!-- <a class="site-list__toggle" href="#">Toggle</a> -->
     </header>
 
     <main class="page-main overflow">
@@ -43,20 +54,22 @@
                   <p class="reason__number">— №1 —</p>
                   <p class="reason__text">Cедона не аттракцион для туристов. Там течет своя жизнь</p>
                 </div>
+                <img class="reason
+                __photo" src="img/main-city-mobile@1x.jpg" alt="Фотография Моста дьявола">
                 <!-- <picture>
-                    <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.webp" type="image/webp">
-                    <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@1x.jpg" type="image/jpeg">
-                    <source media="(min-width: 400px)" srcset="img/main-bridge-tablet@1x.webp" type="image/webp">
-                    <source media="(min-width: 400px)" srcset="img/main-bridge-tablet@1x.jpg" type="image/jpeg">
-                    <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@2x.webp 2x" type="image/webp">	
-                    <source media="(min-width: 1200px)" srcset="img/main-bridge-desktop@2x.jpg 2x" type="image/jpeg">
-                    <source media="(min-width: 400px)" srcset="img/main-bridge-desktop@2x.webp 2x" type="image/webp">			
-                    <source media="(min-width: 400px)" srcset="img/main-bridge-desktop@2x.jpg 2x" type="image/jpeg">
-                    <source media="(max-width: 399px)" srcset="img/main-bridge-mobile@2x.webp 2x" type="image/webp">		
-                    <source media="(max-width: 399px)" srcset="img/main-bridge-mobile@2x.jpg 2x" type="image/jpeg">
-                    <source media="(max-width: 399px)" srcset="img/main-bridge-mobile@1x.webp" type="image/webp">				
-                    <img class="advantages__photo" src="img/main-bridge-mobile@1x.jpg" alt="Фотография Моста дьявола">
-                  </picture> -->
+                    <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.webp" type="image/webp">
+                    <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg" type="image/jpeg">
+                    <source media="(min-width: 400px)" srcset="img/main-city-tablet@1x.webp" type="image/webp">
+                    <source media="(min-width: 400px)" srcset="img/main-city-tablet@1x.jpg" type="image/jpeg">
+                    <source media="(min-width: 1200px)" srcset="/img/main-city-desktop@2x.webp 2x" type="image/webp">	
+                    <source media="(min-width: 1200px)" srcset="img/main-city-desktop@2x.jpg 2x" type="image/jpeg">
+                    <source media="(min-width: 400px)" srcset="img/main-city-desktop@2x.webp 2x" type="image/webp">			
+                    <source media="(min-width: 400px)" srcset="img/main-city-desktop@2x.jpg 2x" type="image/jpeg">
+                    <source media="(max-width: 399px)" srcset="img/main-city-mobile@2x.webp 2x" type="image/webp">		
+                    <source media="(max-width: 399px)" srcset="img/main-city-mobile@2x.jpg 2x" type="image/jpeg">
+                    <source media="(max-width: 399px)" srcset="img/main-city-mobile@1x.webp" type="image/webp">				
+                    <img class="reasons__photo" src="img/main-city-mobile@1x.jpg" alt="Фотография Моста дьявола">
+                </picture> -->
 
                 <dl class="reason__sublist sublist">
                     <div class="sublist__item">
@@ -97,31 +110,31 @@
                   <p class="reason__number">— №2 —</p>
                   <p class="reason__text">Да, по нему можно пройти! Если вы осмелитесь, конечно</p>
                 </div>
-                <picture>
+                <img class="reason__photo" src="img/main-bridge-mobile@1x.jpg" alt="Фотография Моста дьявола">
+                <!-- <picture>
                     <source media="(max-width: 399px)" srcset="img/main-bridge-mobile@1x.webp" type="image/webp">				
                     <img class="reason__photo" src="img/main-bridge-mobile@1x.jpg" alt="Фотография Моста дьявола">
-                  </picture>
+                </picture> -->
             </li>
             <li class="reasons__item reason reason--gray">
-              <div class="reason__wrapper">
+              <div class="reason__wrapper reason__wrapper--gray">
                   <h2 class="reason__title">Небольшая площадь</h2>
                   <p class="reason__number">— №3 —</p>
                   <p class="reason__text">Все интересные места находятся близко</p>
                 </div>
             </li>
             <li class="reasons__item reason reason--gray">
-                <div class="reason__wrapper">
+                <div class="reason__wrapper reason__wrapper--gray">
                     <h2 class="reason__title">Красивая дорога</h2>
                     <p class="reason__number">— №4 —</p>
                     <p class="reason__text">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
                   </div>
               </li>
               <li class="reasons__item reason reason--gray">
-                  <div class="reason__wrapper">
+                  <div class="reason__wrapper reason__wrapper--gray">
                       <h2 class="reason__title">Мало туристов</h2>
                       <p class="reason__number">— №5 —</p>
-                      <p class="reason__text">Большинство едет в Гранд каньон
-                          и толпится там</p>
+                      <p class="reason__text">Большинство едет в Гранд каньон и толпится там</p>
                     </div>
                 </li>
             </div>
@@ -139,41 +152,40 @@
 
       <section class="map">
           <h2 class="map__title visually-hidden">Седона на карте</h2>
-          <iframe src="https://www.google.com/maps/d/u/0/embed?mid=16Z31oo5mndD2UIzx-FSl8v6CXvXvi66J" width="320" height="350" class="booking__map" aria-label="Расположение Седоны на карте. Координаты: Широта: 34°52′11″ с.ш. Долгота: 111°45′39″ з.д.">
+          <iframe class="map__img"  src="https://www.google.com/maps/d/u/0/embed?mid=16Z31oo5mndD2UIzx-FSl8v6CXvXvi66J" width="320" height="350" aria-label="Расположение Седоны на карте. Координаты: Широта: 34°52′11″ с.ш. Долгота: 111°45′39″ з.д.">
           </iframe>
       </section>
     </main>
 
     <footer class="page-footer">
+        <h1 class="visually-hidden">Visit Sedona</h1>
         <b class="page-footer__tag">#VISITSEDONA</b>
         <ul class="page-footer__socials socials">
-
-          <li class="socials__item social">
-            <a href="#" class="social__link" target="_blank">
+          <li class="socials__item">
+            <a href="#" class="socials__link" target="_blank">
               <span class="visually-hidden">Twitter</span>
-              <img src="http://placehold.it/100x100">
+              <img class="link link--twitter" src="img/icon-twitter.svg">
             </a>
           </li>
-
-          <li class="socials__item social">
-            <a href="https://facebook.com/VisitSedona/" class="social__link" target="_blank">
+          <li class="socials__item">
+            <a href="https://facebook.com/VisitSedona/" class="socials__link" target="_blank">
               <span class="visually-hidden">Facebook</span>
-              <img src="http://placehold.it/100x100">
+              <img class="link link--facebook"  src="img/icon-facebook.svg">
             </a>
           </li>
 
-          <li class="socials__item social">
-            <a href="https://www.youtube.com/watch?v=_EuiMYpdvoc" class="social__link" target="_blank">
+          <li class="socials__item">
+            <a href="https://www.youtube.com/watch?v=_EuiMYpdvoc" class="socials__link" target="_blank">
               <span class="visually-hidden">Youtube</span>
-              <img src="http://placehold.it/100x100">
+              <img class="link link--youtube" src="img/icon-youtube.svg">
             </a>
           </li>
         </ul>
 
         <p class="page-footer__copyrights">Разработано
             <a class="page-footer__copyright-link" href="#">
-                <span class="visually-hidden">HTML Academy</span>
-              </a>
+              <span class="visually-hidden">HTML Academy</span>
+            </a>
         </p>
       </footer>
   </body>

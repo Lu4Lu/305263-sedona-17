@@ -3,6 +3,11 @@
     object-fit: contain;
     padding: 0;
     text-align: center;
+    background-color: $s-blue;
+    background-image: url(../img/bg-intro-triangle-mobile.svg),url(../img/bg-back-mobile@1x.jpg);
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    background-size: auto, 770px, 390px;
 
     h1,
     b,
@@ -14,13 +19,13 @@
 
     .promo__wrapper {
         min-height: 390px;
+        padding: 90px 20px 0px 20px;
         background-repeat: no-repeat;
         background-size: 100%;
-        background-image: url(../img/bg-back-mobile@1x.jpg);
+
     }
 
     .promo__logo {
-        margin-top: 90px;
         width: 280px;
         height: 215px;
     }

@@ -31,6 +31,9 @@ $s-text-black: #333333;
 $s-text-black-lighter: #804e43;
 $s-text-black-lightest: rgba(118, 99, 87, 0.3);
 
+$s-btn-inner: rgba(255, 255, 255, 0.2);
+$s-btn-shadow: rgba(1, 1, 1, 0.2);
+
 
 // Margins
 //
@@ -63,6 +66,8 @@ $font-size-h2: 24px;
 $font-size-h3: $font-size-root;
 $font-size-18px: 18px;
 $font-size-12px: 12px;
+$font-size-21px: 21px;
+$font-size-14px: 14px;
 
 $font-size-b: $font-size-18px;
 

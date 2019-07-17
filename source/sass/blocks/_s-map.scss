@@ -1,9 +1,9 @@
 .map {
-    width: 320px;
-    height: 350px;
-    object-fit: contain;
+  width: 320px;
+  height: 350px;
+  object-fit: contain;
 
-    .map__img {
+  .map__img {
     margin: 0;
     padding: 0;
     border: 0;
@@ -14,5 +14,5 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    }
+  }
 }

@@ -1,32 +1,32 @@
 .reasons {
-    .reasons__wrapper {
-        text-align: center;
+  .reasons__wrapper {
+    text-align: center;
+  }
+
+  .reasons__intro {
+    color: $s-text-black;
+    padding: 45px 30px 10px 30px;
+    text-transform: uppercase;
+
+    .reasons__title {
+      font-family: $font-family-bold;
+      font-size: $font-size-18px;
+      margin: 0;
     }
 
-    .reasons__intro {
-        color: $s-text-black;
-        padding: 45px 30px 10px 30px;
-        text-transform: uppercase; 
-
-        .reasons__title {
-            font-family: $font-family-bold;
-            font-size: $font-size-18px;
-            margin: 0;
-        }
-    
-        .reasons__description {
-            font-size: $font-size-root;
-            margin-top: 40px;
-            margin-bottom: 0;
-        }
+    .reasons__description {
+      font-size: $font-size-root;
+      margin-top: 40px;
+      margin-bottom: 0;
     }
+  }
 
-    .reasons__list {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        text-transform: uppercase; 
-        color: $s-white;
-        width: 100%;
-    }
+  .reasons__list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    color: $s-white;
+    width: 100%;
+  }
 }

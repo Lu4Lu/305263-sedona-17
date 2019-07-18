@@ -21,7 +21,7 @@
               <img src="img/logo-sedona-mobile.svg" alt="Герб Седоны" width="188" height="96" class="logo__img">
             </picture>
           </a>
-          <a type="button" class="site-list__toggle">
+          <a type="btn" class="site-list__toggle">
             <img class="reason
                 __photo" src="img/icon-cross.svg" alt="Меню"></span>
             <span class="visually-hidden">Меню</span>
@@ -103,31 +103,35 @@
         </article>
       </div>
     </section>
-    <section class="video">
+    <section class="presentation">
       <h2 class="visually-hidden">Видео</h2>
-      <div class="video__wrapper">
-        <h2 class="video__title">Всё еще сомневаетесь?</h2>
-        <p class="video__description">
+      <div class="presentation__intro">
+        <h2 class="presentation__title">Всё еще сомневаетесь?</h2>
+        <p class="presentation__description">
           Смотрите видеопрезентацию и скорее за билетами,
           пока они не подорожали в очередной раз!
         </p>
-        <div id="video__controls" class="controls" data-state="hidden">
-          <button id="playpause" type="button" data-state="play">Play/Pause</button>
-          <button id="stop" type="button" data-state="stop">Stop</button>
-          <div class="progress">
-            <progress id="progress" value="0" min="0">
-              <span id="progress-bar"></span>
-            </progress>
-          </div>
-          <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
-          <button id="volinc" type="button" data-state="volup">Vol+</button>
-          <button id="voldec" type="button" data-state="voldown">Vol-</button>
-          <button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
-        </div>
-        <iframe class="video__youtube" width="560" height="315" src="https://www.youtube.com/embed/sP_kQkDOT1A"
-          allowfullscreen="" aria-label="Видео-презентация достопримечательностей и красот Седоны">
-        </iframe>
       </div>
+
+      <div class="presentation__video video">
+        <img class="video__img" src="img/video-mobile@1x.jpg" alt="Седона: видеопрезентация.">
+        <div class="video__player">
+          <div class="video__wraper">
+            <div class="video__range"></div>
+            <div class="viseo__marker"></div>
+          </div>
+          <div class="video__btns">
+            <btn class="video__btn video__btn--replay" type="btn">
+              <span class="visually-hidden">Воспроизвести снова</span>
+            </btn>
+            <btn class="video__btn video__btn--сс" type="btn">
+              <span class="visually-hidden">Включить субтитры</span>
+            </btn>
+            <btn class="video__btn video__btn--full-screen" type="btn">
+              <span class="visually-hidden">Развернуть на весь экран</span>
+            </btn>
+          </div>
+        </div>
       </div>
     </section>
   </main>

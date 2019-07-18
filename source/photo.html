@@ -18,7 +18,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/logo-sedona-tablet.svg">
-              <img src="img/logo-sedona-mobile.svg" alt="Герб Седоны" width="188" height="96" class="logo__image">
+              <img src="img/logo-sedona-mobile.svg" alt="Герб Седоны" width="188" height="96" class="logo__img">
             </picture>
           </a>
           <a type="button" class="site-list__toggle">
@@ -49,42 +49,55 @@
           </p>
         </div>
         <article class="gallery__item photo">
-          <img src="http://placehold.it/350x100" />
+          <picture>
+            <!-- <source media="(min-width: 900px)" srcset="img/photo-sunset-desktop@1x.webp" type="img/webp">
+            <source media="(min-width: 900px)" srcset="img/photo-sunset-desktop@1x.jpg" type="img/jpeg">
+            <source media="(min-width: 400px)" srcset="img/photo-sunset-tablet@1x.webp" type="img/webp">
+            <source media="(min-width: 400px)" srcset="img/photo-sunset-tablet@1x.jpg" type="img/jpeg">
+            <source media="(min-width: 900px)" srcset="img/photo-sunset-desktop@2x.webp 2x" type="img/webp">
+            <source media="(min-width: 900px)" srcset="img/photo-sunset-desktop@2x.jpg 2x" type="img/jpeg">
+            <source media="(min-width: 400px)" srcset="img/photo-sunset-desktop@2x.webp 2x" type="img/webp">
+            <source media="(min-width: 400px)" srcset="img/photo-sunset-desktop@2x.jpg 2x" type="img/jpeg">
+            <source media="(max-width: 399px)" srcset="img/photo-sunset-mobile@2x.webp 2x" type="img/webp">
+            <source media="(max-width: 399px)" srcset="img/photo-sunset-mobile@2x.jpg 2x" type="img/jpeg"> -->
+            <!-- <source media="(max-width: 320px)" srcset="img/photo-sunset-mobile@1x.webp" type="img/webp"> -->
+            <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" alt="">
+          </picture>
           <div class="photo__description">
             <h3 class="photo__title">Неродные просторы</h3>
             <p class="photo__author">Автор фото: Борис</p>
             <p class="photo__likes">
-              <img src="http://placehold.it/50x50" />
+              <img class="photo__icon" src="http://placehold.it/50x50" />1350
             </p>
           </div>
         </article>
         <article class="gallery__item photo">
-          <img src="http://placehold.it/350x100" />
+          <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" alt="">
           <div class="photo__description">
             <h3 class="photo__title">Местная растительность</h3>
             <p class="photo__author">Автор фото: Сергей</p>
             <p class="photo__likes">
-              <img src="http://placehold.it/50x50" />
+              <img class="photo__icon" src="http://placehold.it/50x50" />143
             </p>
           </div>
         </article>
         <article class="gallery__item photo">
-          <img src="http://placehold.it/350x100" />
+          <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" alt="">
           <div class="photo__description">
             <h3 class="photo__title">Дорога на север</h3>
             <p class="photo__author">Автор фото: Петр</p>
             <p class="photo__likes">
-              <img src="http://placehold.it/50x50" />
+              <img class="photo__icon" src="http://placehold.it/50x50" />96
             </p>
           </div>
         </article>
         <article class="gallery__item photo">
-          <img src="http://placehold.it/350x100" />
+          <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" alt="">
           <div class="photo__description">
             <h3 class="photo__title">Мост дьявола</h3>
             <p class="photo__author">Автор фото: Антон</p>
             <p class="photo__likes">
-              <img src="http://placehold.it/50x50" />
+              <img class="photo__icon" src="http://placehold.it/50x50" />254
             </p>
           </div>
         </article>
@@ -95,12 +108,26 @@
       <div class="video__wrapper">
         <h2 class="video__title">Всё еще сомневаетесь?</h2>
         <p class="video__description">
-          Смотрите видеопрезентацию и скорее за билетами,<br />
+          Смотрите видеопрезентацию и скорее за билетами,
           пока они не подорожали в очередной раз!
         </p>
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/sP_kQkDOT1A" allowfullscreen=""
-          class="video__youtube" aria-label="Видео-презентация достопримечательностей и красот Седоны">
+        <div id="video__controls" class="controls" data-state="hidden">
+          <button id="playpause" type="button" data-state="play">Play/Pause</button>
+          <button id="stop" type="button" data-state="stop">Stop</button>
+          <div class="progress">
+            <progress id="progress" value="0" min="0">
+              <span id="progress-bar"></span>
+            </progress>
+          </div>
+          <button id="mute" type="button" data-state="mute">Mute/Unmute</button>
+          <button id="volinc" type="button" data-state="volup">Vol+</button>
+          <button id="voldec" type="button" data-state="voldown">Vol-</button>
+          <button id="fs" type="button" data-state="go-fullscreen">Fullscreen</button>
+        </div>
+        <iframe class="video__youtube" width="560" height="315" src="https://www.youtube.com/embed/sP_kQkDOT1A"
+          allowfullscreen="" aria-label="Видео-презентация достопримечательностей и красот Седоны">
         </iframe>
+      </div>
       </div>
     </section>
   </main>

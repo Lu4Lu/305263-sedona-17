@@ -1,0 +1,24 @@
+.gallery {
+  .gallery__wrapper {
+  }
+
+  .gallery__intro {
+    text-align: center;
+    color: $s-text-black;
+    padding: 45px 20px 35px 20px;
+    text-transform: uppercase;
+  }
+
+  .gallery__title {
+    font-family: $font-family-bold;
+    font-size: $font-size-18px;
+    margin: 0;
+  }
+
+  .gallery__description {
+    font-size: $font-size-root;
+    line-height: $line-height-longer;
+    margin-top: 30px;
+    margin-bottom: 0;
+  }
+}

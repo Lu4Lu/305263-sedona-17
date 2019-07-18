@@ -1,0 +1,52 @@
+.promo {
+  height: 390px;
+  object-fit: contain;
+  padding: 0;
+  text-align: center;
+  background-color: $s-blue;
+  background-image: url(../img/bg-intro-triangle-mobile.svg),
+    url(../img/bg-back-mobile@1x.jpg);
+  background-repeat: no-repeat;
+  background-position: 50% bottom;
+  background-size: auto, 770px, 390px;
+
+  .promo__wrapper {
+    padding-left: 20px;
+    padding-right: 20px;
+    background-repeat: no-repeat;
+    background-size: 100%;
+  }
+
+  h1,
+  b,
+  p {
+    font-family: $font-family-sans-serif;
+    color: $s-white;
+    font-weight: 400;
+  }
+
+  &--full {
+    .promo__wrapper {
+      padding-top: 90px;
+      height: 390px;
+    }
+
+    .promo__logo {
+      width: 280px;
+      height: 215px;
+    }
+  }
+
+  &--cut {
+    height: 160px;
+
+    .promo__wrapper {
+      padding-top: 50px;
+    }
+
+    .promo__logo {
+      width: 230px;
+      height: 40px;
+    }
+  }
+}

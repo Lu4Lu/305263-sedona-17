@@ -1,0 +1,24 @@
+.presentation {
+  .presentation__intro {
+    text-align: center;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-top: 1px solid $s-gray-darker;
+    text-transform: uppercase;
+  }
+
+  .presentation__title {
+    font-family: $font-family-bold;
+    font-size: $font-size-18px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .presentation__description {
+    font-size: $font-size-root;
+    line-height: $line-height-longer;
+    margin: 0;
+    margin-bottom: 40px;
+  }
+}

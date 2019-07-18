@@ -1,0 +1,19 @@
+.booking {
+  text-align: center;
+  text-transform: uppercase;
+
+  .booking__wrapper {
+    padding: 35px 20px 50px 20px;
+  }
+
+  .booking__title {
+    font-family: $font-family-bold;
+    font-size: $font-size-18px;
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .booking__description {
+    font-size: $font-size-root;
+  }
+}

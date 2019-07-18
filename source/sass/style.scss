@@ -1,0 +1,21 @@
+// @import "_normalize.scss";
+
+// variables
+@import "_s-variables.scss";
+
+// Custom styling
+@import "_s-utilities.scss";
+@import "_s-type.scss";
+@import "blocks/_s-page-header.scss";
+@import "blocks/_s-socials.scss";
+@import "blocks/_s-page-footer.scss";
+@import "blocks/_s-promo.scss";
+@import "blocks/_s-sublist.scss";
+@import "blocks/_s-reason.scss";
+@import "blocks/_s-reasons.scss";
+@import "blocks/_s-booking.scss";
+@import "blocks/_s-map.scss";
+@import "blocks/_s-photo.scss";
+@import "blocks/_s-gallery.scss";
+@import "blocks/_s-video.scss";
+@import "blocks/_s-presentation.scss";

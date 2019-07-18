@@ -46,30 +46,32 @@
 
         <section class="review">
             <div class="review__wrapper">
-                <h2 class="review__call">Оставьте свой отзыв</h2>
-                <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
-                    посещенных вами достопримечательностях</p>
-
+                <div class="review__intro">
+                    <h2 class="review__call">Оставьте свой отзыв</h2>
+                    <p class="review__description">Помогите нашим отелям стать лучше! Оставьте отзыв о них, а также о
+                        посещенных вами достопримечательностях</p>
+                </div>
                 <form class="review-form" method="post" enctype="multipart/form-data" autocomplete="off"
                     action="https://echo.htmlacademy.ru">
 
                     <fieldset class="review__element element__name">
+                        <legend class="review__title">Представьтесь:</legend>
                         <p class="review__item">
                             <label class="review__label" for="name">Имя<sup>*</sup>:</label>
-                            <input id="name" name="name" type="text" placeholder="Петр" minlength="1" maxlength="30"
-                                required=""></label>
+                            <input class="review__input" id="name" name="name" type="text" placeholder="Петр"
+                                minlength="1" maxlength="30" required=""></label>
                         </p>
 
                         <p class="review__item">
                             <label class="review__label" for="last-name">Фамилия<sup>*</sup>:</label>
-                            <input id="last-name" name="last-name" type="text" placeholder="Иванов" minlength="1"
-                                maxlength="30" required=""></label>
+                            <input class="review__input" id="last-name" name="last-name" type="text"
+                                placeholder="Иванов" minlength="1" maxlength="30" required=""></label>
                         </p>
 
                         <p class="review__item">
                             <label class="review__label" for="father-name">Отчество:</label>
-                            <input id="father-name" name="father-name" type="text" placeholder="Александрович"
-                                minlength="1" maxlength="30" required=""></label>
+                            <input class="review__input" id="father-name" name="father-name" type="text"
+                                placeholder="Александрович" minlength="1" maxlength="30" required=""></label>
                         </p>
                     </fieldset>
 
@@ -77,13 +79,13 @@
                         <legend class="review__title">Контактная информация:</legend>
                         <p class="review__item">
                             <label class="review__label" for="phone">Контактный телефон<sup>*</sup>:</label>
-                            <input id="phone" name="phone" type="phone" placeholder="Введите телефон" size="30"
-                                required="">
+                            <input class="review__input" id="phone" name="phone" type="phone"
+                                placeholder="Введите телефон" size="30" required="">
                         </p>
                         <p class="review__item">
                             <label class="review__label" for="email">Электронная почта<sup>*</sup>:</label>
-                            <input id="email" name="email" type="email" placeholder="Введите e-mail" size="30"
-                                required="">
+                            <input class="review__input" id="email" name="email" type="email"
+                                placeholder="Введите e-mail" size="30" required="">
                         </p>
                     </fieldset>
 
@@ -91,7 +93,7 @@
                         <legend class="review__title">Ваше общее впечатление:</legend>
                         <p class="review__item">
                             <label class="review-radio review-radio--large" for="review-good">
-                                <input class="review-input" type="radio" name="feeling" value="good" id="review-good"
+                                <input class="review__input" type="radio" name="feeling" value="good" id="review-good"
                                     checked>
                                 <span>Скорее положительное</span>
                             </label>

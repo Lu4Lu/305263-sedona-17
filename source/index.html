@@ -34,6 +34,8 @@
   </header>
 
   <main class="page-main overflow">
+
+    <!-- Промо -->
     <section class="promo promo--full">
       <div class="promo__wrapper">
         <h1 class="visually-hidden">Седона круче Гранд Каньона.</h1>
@@ -42,6 +44,7 @@
       </div>
     </section>
 
+    <!-- Причины -->
     <section class="reasons">
       <div class="reasons__wrapper">
         <div class="reasons__intro">
@@ -49,25 +52,26 @@
           <p class="reasons__description">Рассмотрим 5 причин, по которым Седона круче, чем Гранд каньон!</p>
         </div>
         <ul class="reasons__list">
+
+          <!-- Настоящий городок -->
           <li class="reasons__item reason reason--blue">
             <div class="reason__wrapper">
               <h2 class="reason__title">Настоящий городок</h2>
               <p class="reason__number">— №1 —</p>
               <p class="reason__text">Cедона не аттракцион для туристов. Там течет своя жизнь</p>
             </div>
-            <img class="reason
-                __photo" src="img/main-city-mobile@1x.jpg" alt="Фотография Моста дьявола">
-            <dl class="reason__sublist sublist">
-              <div class="sublist__item">
+            <picture>
+              <source media="(min-width: 1200px)" srcset="img/main-city-desktop@1x.jpg" type="image/jpeg">
+              <source media="(min-width: 499px)" srcset="img/main-city-tablet@1x.jpg" type="image/jpeg">
+              <img class="reason
+              __photo" src="img/main-city-mobile@1x.jpg" alt="Фотография Моста дьявола">
+            </picture>
+            <ul class="reason__sublist sublist">
+              <li class="sublist__item">
                 <img class="sublist__icon" src="img/icon-house.svg" alt="House'" width="38" height="36">
-                <dt class="sublist__caption">
-
-                  <div class="sublist__wrapper">
-                    Жилье
-                  </div>
-                </dt>
-                <dd class="sublist__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</dd>
-              </div>
+                <b class="sublist__caption">Жилье</b>
+                <p class="sublist__description">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+              </li>
               <div class="sublist__item">
                 <img class="sublist__icon" src="img/icon-house.svg" alt="House'" width="38" height="36">
                 <dt class="sublist__caption">
@@ -88,7 +92,7 @@
                 </dt>
                 <dd class="sublist__description"> Всегда заказывайте ФИРМЕННЫЙ БУРГЕР, Вы НЕ разочаруетесь!</dd>
               </div>
-            </dl>
+            </ul>
           </li>
           <li class="reasons__item reason reason--blue">
             <div class="reason__wrapper">

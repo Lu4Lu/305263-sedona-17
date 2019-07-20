@@ -1,5 +1,4 @@
 .promo {
-  min-height: 390px;
   padding: 0;
   text-align: center;
   background-color: $s-blue;
@@ -10,6 +9,8 @@
   background-size: auto, 770px, 390px;
 
   &--full {
+    min-height: 390px;
+
     .promo__wrapper {
       padding-top: 90px;
     }
@@ -36,13 +37,14 @@
 
 @media (min-width: $tablet-width) {
   .promo {
-    min-height: 515px;
     background-size: auto, auto, 300px;
     background-image: url(../img/bg-intro-triangle-tablet.svg),
       url(../img/bg-back-tablet@1x.jpg);
     background-position: 50% bottom;
 
     &--full {
+      min-height: 515px;
+
       .promo__wrapper {
         padding-top: 80px;
       }
@@ -50,6 +52,19 @@
       .promo__logo {
         width: 520px;
         height: 360px;
+      }
+    }
+
+    &--cut {
+      height: 290px;
+
+      .promo__wrapper {
+        padding-top: 95px;
+      }
+
+      .promo__logo {
+        width: 460px;
+        height: 80px;
       }
     }
   }
@@ -71,6 +86,10 @@
         width: 360px;
         height: 240px;
       }
+    }
+
+    &--cut {
+      height: 300px;
     }
   }
 }

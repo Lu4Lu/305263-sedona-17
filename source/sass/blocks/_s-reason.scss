@@ -76,7 +76,6 @@
     padding: 0;
     background-color: $s-white;
     max-height: 260px;
-    height: auto;
     object-fit: cover;
   }
 }
@@ -84,7 +83,7 @@
 @media (min-width: $tablet-width) {
   .reason {
     justify-content: stretch;
-    // margin: 0;
+    width: 100%;
 
     .reason__wrapper {
       display: flex;
@@ -127,6 +126,8 @@
     picture {
       margin: 0;
       padding: 0;
+      max-width: 66.666%;
+      justify-content: flex-end;
     }
 
     .reason__photo {
@@ -143,7 +144,7 @@
       align-content: stretch;
 
       .reason__wrapper {
-        // max-width: 33.3%;
+        max-width: 33.3%;
         flex-grow: 1;
         padding-top: 60px;
       }

@@ -1,8 +1,10 @@
 .socials {
   display: flex;
   align-items: center;
-  margin: 0 auto;
-  padding: 0 0 35px 0;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  margin-bottom: 40px;
   list-style: none;
 
   .socials__link {
@@ -14,5 +16,17 @@
     background-color: $s-blue;
     padding: 0;
     margin: 0 5px;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .socials {
+    justify-content: space-between;
+    align-content: center;
+    margin: 0;
+
+    .socials__link {
+      // margin: 0;
+    }
   }
 }

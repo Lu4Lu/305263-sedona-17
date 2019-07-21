@@ -1,6 +1,4 @@
 .promo {
-  height: 390px;
-  object-fit: contain;
   padding: 0;
   text-align: center;
   background-color: $s-blue;
@@ -10,25 +8,11 @@
   background-position: 50% bottom;
   background-size: auto, 770px, 390px;
 
-  .promo__wrapper {
-    padding-left: 20px;
-    padding-right: 20px;
-    background-repeat: no-repeat;
-    background-size: 100%;
-  }
-
-  h1,
-  b,
-  p {
-    font-family: $font-family-sans-serif;
-    color: $s-white;
-    font-weight: 400;
-  }
-
   &--full {
+    min-height: 390px;
+
     .promo__wrapper {
       padding-top: 90px;
-      height: 390px;
     }
 
     .promo__logo {
@@ -47,6 +31,65 @@
     .promo__logo {
       width: 230px;
       height: 40px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .promo {
+    background-size: auto, auto, 300px;
+    background-image: url(../img/bg-intro-triangle-tablet.svg),
+      url(../img/bg-back-tablet@1x.jpg);
+    background-position: 50% bottom;
+
+    &--full {
+      min-height: 515px;
+
+      .promo__wrapper {
+        padding-top: 80px;
+      }
+
+      .promo__logo {
+        width: 520px;
+        height: 360px;
+      }
+    }
+
+    &--cut {
+      height: 290px;
+
+      .promo__wrapper {
+        padding-top: 95px;
+      }
+
+      .promo__logo {
+        width: 460px;
+        height: 80px;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .promo {
+    min-height: 350px;
+    background-size: auto, 1200px, 350px;
+    background-image: url(../img/bg-intro-triangle-desktop.svg),
+      url(../img/bg-back-desktop@1x.jpg);
+
+    &--full {
+      .promo__wrapper {
+        padding-top: 65px;
+      }
+
+      .promo__logo {
+        width: 360px;
+        height: 240px;
+      }
+    }
+
+    &--cut {
+      height: 300px;
     }
   }
 }

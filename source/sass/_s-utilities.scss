@@ -1,3 +1,22 @@
 .visually-hidden {
   display: none;
 }
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+@media (min-width: $desktop-width) {
+  body {
+    // padding: 0 40px;
+    max-width: 1200px;
+    background-color: $s-gray;
+    margin: 0 auto;
+    box-shadow: 0 5px 15px 0 rgba(0, 1, 1, 0.2);
+  }
+
+  .page-main {
+    margin: 0 auto;
+  }
+}

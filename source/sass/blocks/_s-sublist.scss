@@ -2,35 +2,92 @@
   background-color: $s-white;
   color: $s-text-black;
   text-align: left;
-  padding-bottom: 45px;
+  margin: 0;
+  padding: 0;
+  padding-top: 25px;
+  padding-bottom: 20px;
 
-  .sublist__caption {
+  .sublist__item {
     display: flex;
-    align-items: center;
-    padding: 25px 0 15px 0;
+    flex-direction: column;
+    list-style: none;
+    text-align: left;
+    padding: 0 40px 20px 20px;
   }
 
-  .sublist__wrapper {
-    display: flex;
-    align-items: center;
-    font-family: $font-family-bold;
-    font-size: $font-size-18px;
-    padding-left: 70px;
-    padding-right: 60px;
+  .sublist__caption {
+    position: relative;
+    margin: 0;
+    padding: 0;
+    text-align: left;
   }
 
   .sublist__icon {
-    fill: $s-blue;
+    position: absolute;
     padding: 0;
-    padding-left: 25px;
-    margin-right: 10px;
+    top: 0;
+    left: 0;
+    width: 35px;
+    height: 35px;
+  }
+
+  .sublist__title {
+    font-family: $font-family-bold;
+    font-size: $font-size-18px;
+    margin: 0;
+    padding: 0;
+    padding-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
 
   .sublist__description {
     font-size: $font-size-root;
     padding: 0;
-    padding-left: 70px;
-    padding-right: 60px;
+    padding-left: 50px;
     margin: 0;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .sublist {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: stretch;
+    margin: 0;
+    padding: 60px 20px 60px 20px;
+
+    .sublist__item {
+      text-align: center;
+      padding: 0;
+      padding-left: 30px;
+      padding-right: 40px;
+    }
+
+    .sublist__caption {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .sublist__icon {
+      position: relative;
+    }
+
+    .sublist__title {
+      // font-family: $font-family-bold;
+      // font-size: $font-size-18px;
+      // margin: 0;
+      padding: 0;
+      // padding-left: 50px;
+      // margin-bottom: 10px;
+      // margin-top: 10px;
+    }
+
+    .sublist__description {
+      font-size: $font-size-root;
+      padding: 0;
+    }
   }
 }

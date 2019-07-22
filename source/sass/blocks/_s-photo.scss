@@ -3,6 +3,13 @@
   text-align: left;
   border-top: 1px solid $s-gray-darker;
 
+  picture {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: 0;
+  }
+
   .photo__img {
     width: 100%;
     height: auto;
@@ -10,8 +17,9 @@
     object-fit: cover;
   }
 
-  .photo__description {
+  .photo__info {
     color: $s-text-black;
+    margin-top: 20px;
 
     .photo__title {
       font-size: $font-size-root;
@@ -19,7 +27,6 @@
       text-transform: uppercase;
       margin: 0;
       padding: 0;
-      margin-top: 20px;
     }
 
     .photo__author {
@@ -31,11 +38,91 @@
     .photo__likes {
       font-size: $font-size-root;
       font-family: $font-family-bold;
+      margin: 0;
     }
 
     .photo__icon {
       fill: rgba(0, 0, 0, 0.3);
       margin-right: 15px;
+    }
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .photo {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    border: none;
+    padding: 0;
+
+    picture {
+      width: 100%;
+    }
+
+    .photo__img {
+      width: 100%;
+      max-height: 265px;
+    }
+
+    &--main {
+      width: 100%;
+
+      .photo__img {
+        max-height: 400px;
+      }
+    }
+
+    &--rect {
+      width: 50%;
+
+      .photo__img {
+        max-height: 265px;
+      }
+    }
+
+    .photo__info {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      align-content: center;
+      width: 100%;
+      background-color: $s-gray;
+      color: $s-text-black;
+      margin: 0;
+      margin-top: -8px;
+
+      .photo__description {
+        padding: 20px 0 20px 20px;
+      }
+
+      .photo__title {
+        font-size: $font-size-root;
+        font-family: $font-family-bold;
+      }
+
+      .photo__likes {
+        padding: 20px 20px 20px 0;
+      }
+    }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .photo {
+    position: relative;
+    width: 33.33%;
+
+    .photo__info {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.3);
+      color: $s-white;
+    }
+
+    &--main {
+      width: 100%;
     }
   }
 }

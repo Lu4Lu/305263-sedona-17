@@ -32,6 +32,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="page-main">
     <section class="promo promo--cut">
       <div class="promo__wrapper">
@@ -40,62 +41,81 @@
       </div>
     </section>
     <section class="gallery">
+      <div class="gallery__intro">
+        <h1 class="gallery__title">Фото и видео</h1>
+        <p class="gallery__description">
+          Не можете решиться на путешествие из-за курса? Фотографии помогут
+          вам забыть о политике и экономике.
+        </p>
+      </div>
+
       <div class="gallery__wrapper">
-        <div class="gallery__intro">
-          <h1 class="gallery__title">Фото и видео</h1>
-          <p class="gallery__description">
-            Не можете решиться на путешествие из-за курса? Фотографии помогут
-            вам забыть о политике и экономике.
-          </p>
-        </div>
-        <article class="gallery__item photo">
+
+        <article class="gallery__item photo photo--main">
+
           <picture>
-            <!-- <source media="(min-width: 900px)" srcset="img/photo-sunset-desktop@1x.webp" type="img/webp">
-            <source media="(min-width: 900px)" srcset="img/photo-sunset-desktop@1x.jpg" type="img/jpeg">
-            <source media="(min-width: 400px)" srcset="img/photo-sunset-tablet@1x.webp" type="img/webp">
-            <source media="(min-width: 400px)" srcset="img/photo-sunset-tablet@1x.jpg" type="img/jpeg">
-            <source media="(min-width: 900px)" srcset="img/photo-sunset-desktop@2x.webp 2x" type="img/webp">
-            <source media="(min-width: 900px)" srcset="img/photo-sunset-desktop@2x.jpg 2x" type="img/jpeg">
-            <source media="(min-width: 400px)" srcset="img/photo-sunset-desktop@2x.webp 2x" type="img/webp">
-            <source media="(min-width: 400px)" srcset="img/photo-sunset-desktop@2x.jpg 2x" type="img/jpeg">
-            <source media="(max-width: 399px)" srcset="img/photo-sunset-mobile@2x.webp 2x" type="img/webp">
-            <source media="(max-width: 399px)" srcset="img/photo-sunset-mobile@2x.jpg 2x" type="img/jpeg"> -->
-            <!-- <source media="(max-width: 320px)" srcset="img/photo-sunset-mobile@1x.webp" type="img/webp"> -->
+            <source media="(min-width: 1200px)" srcset="img/photo-sunset-desktop@1x.jpg" type="image/jpeg">
+            <source media="(min-width: 499px)" srcset="img/photo-sunset-tablet@1x.jpg" type="image/jpeg">
             <img class="photo__img" src="img/photo-sunset-mobile@1x.jpg" alt="">
           </picture>
-          <div class="photo__description">
-            <h3 class="photo__title">Неродные просторы</h3>
-            <p class="photo__author">Автор фото: Борис</p>
+
+          <div class="photo__info">
+            <div class="photo__description">
+              <h3 class="photo__title">Неродные просторы</h3>
+              <p class="photo__author">Автор фото: Борис</p>
+            </div>
             <p class="photo__likes">
               <img class="photo__icon" src="http://placehold.it/50x50" />1350
             </p>
           </div>
+
         </article>
-        <article class="gallery__item photo">
-          <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" alt="">
-          <div class="photo__description">
-            <h3 class="photo__title">Местная растительность</h3>
-            <p class="photo__author">Автор фото: Сергей</p>
+
+        <article class="gallery__item photo photo--rect">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-cactus-desktop@1x.jpg" type="image/jpeg">
+            <source media="(min-width: 499px)" srcset="img/photo-cactus-tablet@1x.jpg" type="image/jpeg">
+            <img class="photo__img" src="img/photo-cactus-mobile@1x.jpg" alt="">
+          </picture>
+          <div class="photo__info">
+            <div class="photo__description">
+              <h3 class="photo__title">Местная растительность</h3>
+              <p class="photo__author">Автор фото: Сергей</p>
+            </div>
             <p class="photo__likes">
               <img class="photo__icon" src="http://placehold.it/50x50" />143
             </p>
           </div>
         </article>
-        <article class="gallery__item photo">
-          <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" alt="">
-          <div class="photo__description">
-            <h3 class="photo__title">Дорога на север</h3>
-            <p class="photo__author">Автор фото: Петр</p>
+        <article class="gallery__item photo photo--rect">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-roads-desktop@1x.jpg" type="image/jpeg">
+            <source media="(min-width: 499px)" srcset="img/photo-roads-tablet@1x.jpg" type="image/jpeg">
+            <img class="photo__img" src="img/photo-roads-mobile@1x.jpg" alt="">
+          </picture>
+          <div class="photo__info">
+            <div class="photo__description">
+              <h3 class="photo__title">Дорога на север</h3>
+              <p class="photo__author">Автор фото: Петр</p>
+
+            </div>
             <p class="photo__likes">
               <img class="photo__icon" src="http://placehold.it/50x50" />96
             </p>
           </div>
         </article>
-        <article class="gallery__item photo">
-          <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" alt="">
-          <div class="photo__description">
-            <h3 class="photo__title">Мост дьявола</h3>
-            <p class="photo__author">Автор фото: Антон</p>
+        <article class="gallery__item photo photo--rect">
+          <picture>
+            <source media="(min-width: 1200px)" srcset="img/photo-bridge-desktop@1x.jpg" type="image/jpeg">
+            <source media="(min-width: 499px)" srcset="img/photo-bridge-tablet@1x.jpg" type="image/jpeg">
+            <img class="photo__img" src="img/photo-bridge-mobile@1x.jpg" alt="">
+          </picture>
+          <div class="photo__info">
+            <div class="photo__description">
+              <h3 class="photo__title">Мост дьявола</h3>
+              <p class="photo__author">Автор фото: Антон</p>
+
+            </div>
             <p class="photo__likes">
               <img class="photo__icon" src="http://placehold.it/50x50" />254
             </p>
@@ -136,35 +156,37 @@
     </section>
   </main>
   <footer class="page-footer">
-    <h1 class="visually-hidden">Visit Sedona</h1>
-    <b class="page-footer__tag">#VISITSEDONA</b>
-    <ul class="page-footer__socials socials">
-      <li class="socials__item">
-        <a href="#" class="socials__link" target="_blank">
-          <span class="visually-hidden">Twitter</span>
-          <img class="link link--twitter" src="img/icon-twitter.svg">
-        </a>
-      </li>
-      <li class="socials__item">
-        <a href="https://facebook.com/VisitSedona/" class="socials__link" target="_blank">
-          <span class="visually-hidden">Facebook</span>
-          <img class="link link--facebook" src="img/icon-facebook.svg">
-        </a>
-      </li>
+    <div class="page-footer__wrapper">
+      <h1 class="visually-hidden">Visit Sedona</h1>
+      <b class="page-footer__tag">#VISITSEDONA</b>
+      <ul class="page-footer__socials socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link" target="_blank">
+            <span class="visually-hidden">Twitter</span>
+            <img class="link link--twitter" src="img/icon-twitter.svg">
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="https://facebook.com/VisitSedona/" class="socials__link" target="_blank">
+            <span class="visually-hidden">Facebook</span>
+            <img class="link link--facebook" src="img/icon-facebook.svg">
+          </a>
+        </li>
 
-      <li class="socials__item">
-        <a href="https://www.youtube.com/watch?v=_EuiMYpdvoc" class="socials__link" target="_blank">
-          <span class="visually-hidden">Youtube</span>
-          <img class="link link--youtube" src="img/icon-youtube.svg">
-        </a>
-      </li>
-    </ul>
+        <li class="socials__item">
+          <a href="https://www.youtube.com/watch?v=_EuiMYpdvoc" class="socials__link" target="_blank">
+            <span class="visually-hidden">Youtube</span>
+            <img class="link link--youtube" src="img/icon-youtube.svg">
+          </a>
+        </li>
+      </ul>
 
-    <p class="page-footer__copyrights">Разработано
-      <a class="page-footer__copyright-link" href="#">
-        <span class="visually-hidden">HTML Academy</span>
-      </a>
-    </p>
+      <p class="page-footer__copyright">Разработано
+        <a class="page-footer__copyright-link" href="#">
+          <span class="visually-hidden">HTML Academy</span>
+        </a>
+      </p>
+    </div>
   </footer>
 </body>
 

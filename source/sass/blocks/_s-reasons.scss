@@ -1,9 +1,13 @@
 .reasons {
   .reasons__wrapper {
+    background-color: $s-white;
     text-align: center;
+    margin: 0 auto;
   }
 
   .reasons__intro {
+    margin: 0 auto;
+    max-width: 560px;
     color: $s-text-black;
     padding: 45px 30px 35px 30px;
     text-transform: uppercase;
@@ -30,3 +34,30 @@
     width: 100%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .reasons {
+    display: flex;
+    flex-direction: column;
+
+    .reasons__list {
+      width: 100%;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .reasons__intro {
+      max-width: 560px;
+    }
+  }
+}
+
+// @media (min-width: $desktop-width) {
+//   .reasons {
+//     display: flex;
+//     flex-direction: column;
+//     max-width: 1200px;
+//   }
+// }

@@ -15,7 +15,6 @@
       background-repeat: no-repeat;
       background-position: 50% top;
       background-size: auto;
-      object-fit: cover;
 
       .reason__wrapper {
         padding-top: 60px;
@@ -76,7 +75,6 @@
     padding: 0;
     background-color: $s-white;
     max-height: 260px;
-    object-fit: cover;
   }
 }
 
@@ -131,9 +129,10 @@
     }
 
     .reason__photo {
-      height: auto;
       max-height: none;
       overflow: hidden;
+      background-size: cover;
+      width: 66.66%;
     }
 
     &--blue {
@@ -147,6 +146,7 @@
         max-width: 33.3%;
         flex-grow: 1;
         padding-top: 60px;
+        max-height: 255px;
       }
 
       &:first-child {
@@ -170,8 +170,7 @@
       background-color: $s-gray;
       align-content: stretch;
       flex-wrap: nowrap;
-
-      max-width: 33%;
+      max-width: 33.33%;
     }
   }
 }

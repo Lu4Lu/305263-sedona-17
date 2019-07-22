@@ -116,32 +116,34 @@
           <!-- достопримечательности -->
           <fieldset class="form__item form__item--sights">
             <legend class="form__title">Посещенные достопримечательности:</legend>
-            <p class="form__element">
-              <label class="form__sight  form__sight--large" for="sight-bridge">
-                <input type="checkbox" name="sight-bridge" value="bridge" id="sight-bridge" class="visually-hidden"
-                  checked>
-                <span class="form__indicator"></span>Мост Дьявола
-              </label>
-            </p>
-            <p class="form__element">
-              <label class="form__sight form__sight--large" for="sight-mountain">
-                <input type="checkbox" name="sight-mountain" value="mountain" id="sight-mountain"
-                  class="visually-hidden" checked>
-                <span class="form__indicator"></span>Гора-Колокол
-              </label>
-            </p>
-            <p class="form__element">
-              <label class="form__sight form__sight--large" for="sight-park">
-                <input type="checkbox" name="sight-park" value="park" id="sight-park" class="visually-hidden" checked>
-                <span class="form__indicator"></span>Слайд-парк
-              </label>
-            </p>
-            <p class="form__element">
-              <label class="form__sight form__sight--large" for="sight-rocks">
-                <input type="checkbox" name="sight-rocks" value="rocks" id="sight-rocks" class="visually-hidden">
-                <span class="form__indicator"></span>Красные скалы
-              </label>
-            </p>
+            <div class="form__wrapper">
+              <p class="form__element">
+                <label class="form__sight  form__sight--large" for="sight-bridge">
+                  <input type="checkbox" name="sight-bridge" value="bridge" id="sight-bridge" class="visually-hidden"
+                    checked>
+                  <span class="form__indicator"></span>Мост Дьявола
+                </label>
+              </p>
+              <p class="form__element">
+                <label class="form__sight form__sight--large" for="sight-mountain">
+                  <input type="checkbox" name="sight-mountain" value="mountain" id="sight-mountain"
+                    class="visually-hidden" checked>
+                  <span class="form__indicator"></span>Гора-Колокол
+                </label>
+              </p>
+              <p class="form__element">
+                <label class="form__sight form__sight--large" for="sight-park">
+                  <input type="checkbox" name="sight-park" value="park" id="sight-park" class="visually-hidden" checked>
+                  <span class="form__indicator"></span>Слайд-парк
+                </label>
+              </p>
+              <p class="form__element">
+                <label class="form__sight form__sight--large" for="sight-rocks">
+                  <input type="checkbox" name="sight-rocks" value="rocks" id="sight-rocks" class="visually-hidden">
+                  <span class="form__indicator"></span>Красные скалы
+                </label>
+              </p>
+            </div>
           </fieldset>
 
           <!-- комментарий-->
@@ -152,7 +154,10 @@
             </p>
           </fieldset>
         </form>
-        <button class="review-btn btn btn--request" type="submit">Отправить заявку</button>
+        <div class="review-btn__wrapper">
+          <button class="review__btn btn btn--request" type="submit">Отправить заявку</button>
+          <small class="review__legend review__legend--top"><sup>*</sup> — Обязательные поля</small>
+        </div>
       </div>
     </section>
   </main>

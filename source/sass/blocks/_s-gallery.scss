@@ -51,9 +51,9 @@
         width: 100%;
       }
 
-      &:nth-child(odd) {
+      &:nth-child(3) {
         .photo__info {
-          background-color: $s-gray-darker;
+          background-color: red;
         }
       }
     }
@@ -62,24 +62,10 @@
 
 @media (min-width: $desktop-width) {
   .gallery {
-    // display: flex;
-    // flex-direction: column;
-    // justify-items: center;
-    // padding-bottom: 75px;
-
     .gallery__intro {
-      // padding: 0;
-      // padding-top: 75px;
-      // padding-bottom: 75px;
-      // max-width: 440px;
-      // margin: 0 auto;
-
-      // .gallery__title {
-      //   font-size: $font-size-30px;
-      // }
-    }
-
-    .gallery__wrapper {
+      padding-top: 115px;
+      max-width: 440px;
+      margin: 0 auto;
     }
   }
 }

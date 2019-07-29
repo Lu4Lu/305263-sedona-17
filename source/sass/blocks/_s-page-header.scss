@@ -1,31 +1,25 @@
 .page-header {
   padding: 0;
   margin: 0 auto;
+}
 
-  .page-nav {
-    display: block;
-    padding: 0;
-  }
-
-  .site-list {
+.main-nav {
+  .main-nav__list {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    padding: 0;
     list-style: none;
-    width: 100%;
-    margin: 0 auto;
+    padding: 0;
 
-    .site-list__item {
+    li {
       display: block;
       width: 100%;
       padding: 0;
     }
 
-    .site-list__link {
+    .main-nav__link {
       display: block;
       margin: 0;
-      padding: 10px 0;
+      padding: 20px 0;
       text-align: center;
       text-decoration: none;
       text-transform: uppercase;
@@ -47,20 +41,134 @@
       background-color: $s-white;
       text-align: center;
     }
+  }
 
-    .site-list__toggle {
-      position: absolute;
-      top: 15px;
-      right: 20px;
-      margin: 0;
+  &--opened {
+    .main-nav__list {
+      .main-nav__toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        width: 25px;
+        height: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+        outline: 0;
+      }
+
+      .main-nav__toggle-icon {
+        position: absolute;
+        display: block;
+        top: 10px;
+        right: 0;
+        background-color: $s-white;
+        width: 25px;
+        height: 4px;
+        background-color: transparent;
+        border: none;
+
+        &::before {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 25px;
+          height: 4px;
+          background-color: $s-white;
+          transform: rotate(45deg);
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          top: 0;
+          right: 0;
+          width: 25px;
+          height: 4px;
+          background-color: $s-white;
+          transform: rotate(-45deg);
+        }
+      }
+    }
+  }
+
+  &--closed {
+    .main-nav__list {
+      display: block;
       padding: 0;
-      border: none;
-      background-color: transparent;
-      width: 23px;
-      height: 22px;
-      transition: 0.3s;
-      cursor: pointer;
-      outline: 0;
+
+      li {
+        display: none;
+      }
+
+      .main-nav__toggle {
+        position: absolute;
+        top: 15px;
+        right: 20px;
+        margin: 0;
+        padding: 0;
+        border: none;
+        background-color: transparent;
+        width: 25px;
+        height: 20px;
+        transition: 0.3s;
+        cursor: pointer;
+        outline: 0;
+      }
+
+      .main-nav__toggle-icon {
+        position: absolute;
+        display: block;
+        top: 10px;
+        background-color: $s-blue;
+        width: 25px;
+        height: 4px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          width: 25px;
+          height: 4px;
+          background-color: $s-blue;
+          bottom: 10px;
+          right: 0;
+        }
+
+        &::after {
+          content: "";
+          position: absolute;
+          width: 25px;
+          height: 4px;
+          background-color: $s-blue;
+          top: 10px;
+          right: 0;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .main-nav {
+    &--closed {
+      display: block;
+      padding: 0;
+    }
+
+    &--nojs {
+      .main-nav__toggle {
+        display: none;
+      }
+    }
+
+    &--closed {
+      .main-nav__item--active {
+        display: block;
+      }
     }
   }
 }
@@ -72,42 +180,35 @@
     justify-content: center;
     max-width: 1200px;
     position: relative;
+  }
 
-    .page-nav {
-      justify-content: center;
-    }
+  .main-nav {
+    justify-content: center;
 
-    .site-list {
+    .main-nav__list {
+      display: flex;
       flex-direction: row;
+      background-color: $s-white;
 
-      .logo {
-        order: 0;
+      li {
+        display: block;
+        width: 25%;
       }
 
-      .site-list__link {
+      .main-nav__link {
+        font-size: $font-size-14px;
         padding: 20px 0;
-
         background-color: $s-white;
         color: $s-text-black;
         border: none;
       }
 
-      .site-list__toggle {
+      .main-nav__toggle {
         display: none;
       }
-    }
-  }
-}
 
-@media (min-width: $desktop-width) {
-  .page-header {
-    .site-list {
       .logo {
-        height: 58px;
-      }
-
-      .site-list__link {
-        font-size: $font-size-14px;
+        order: 0;
       }
     }
   }

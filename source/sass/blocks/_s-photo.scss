@@ -24,21 +24,32 @@
     .photo__title {
       font-size: $font-size-root;
       font-family: $font-family-bold;
+      color: $s-black;
       text-transform: uppercase;
       margin: 0;
       padding: 0;
+      margin-bottom: 10px;
     }
 
     .photo__author {
       font-size: $font-size-root;
       margin: 0;
-      margin-top: 10px;
+      margin-bottom: 10px;
     }
 
     .photo__likes {
+      display: flex;
+      align-items: flex-end;
       font-size: $font-size-root;
       font-family: $font-family-bold;
+      color: $s-black;
       margin: 0;
+
+      svg {
+        margin-right: 10px;
+        padding-top: 5px;
+        opacity: 0.3;
+      }
     }
 
     .photo__icon {
@@ -85,10 +96,9 @@
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
-      align-content: center;
+      align-items: center;
       width: 100%;
       background-color: $s-gray;
-      color: $s-text-black;
       margin: 0;
       margin-top: -8px;
 
@@ -99,6 +109,10 @@
       .photo__title {
         font-size: $font-size-root;
         font-family: $font-family-bold;
+      }
+
+      .photo__author {
+        margin: 0;
       }
 
       .photo__likes {
@@ -112,13 +126,31 @@
   .photo {
     position: relative;
     width: 33.33%;
+    margin-top: -5px;
 
     .photo__info {
       position: absolute;
       left: 0;
-      bottom: 0;
+      bottom: 5px;
       background-color: rgba(0, 0, 0, 0.3);
       color: $s-white;
+
+      .photo__title {
+        color: $s-white;
+      }
+
+      .photo__authors {
+        margin-bottom: 0;
+      }
+
+      .photo__likes {
+        color: $s-white;
+
+        svg {
+          fill: $s-white;
+          opacity: 1;
+        }
+      }
     }
 
     &--main {

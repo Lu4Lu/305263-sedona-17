@@ -30,10 +30,10 @@
   .sublist__icon {
     position: absolute;
     padding: 0;
-    top: -10px;
+    bottom: 10px;
     left: 0;
-    width: 35px;
-    height: 35px;
+    width: 40px;
+    height: 40px;
     fill: $s-blue;
   }
 
@@ -60,7 +60,6 @@
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
-    // align-items: stretch;
     margin: 0;
     padding: 60px 20px 60px 20px;
 
@@ -89,20 +88,14 @@
     .sublist__icon {
       position: relative;
       width: 75px;
-      height: auto;
-      top: 0;
-      bottom: 60px;
+      height: 75px;
+      bottom: 0;
       left: 0;
     }
 
     .sublist__title {
-      // font-family: $font-family-bold;
       font-size: $font-size-21px;
-      // margin: 0;
       padding: 0;
-      // padding-left: 50px;
-      // margin-bottom: 10px;
-      // margin-top: 10px;
     }
 
     .sublist__description {

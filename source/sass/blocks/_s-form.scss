@@ -89,7 +89,12 @@
     background-color: $s-gray;
     padding: 20px;
     color: $s-black;
+    opacity: 1;
     flex-grow: 1;
+
+    &::placeholder {
+      color: $s-black;
+    }
   }
 
   .form__indicator {
@@ -154,6 +159,10 @@
       background-color: $s-gray;
       border: 0;
       height: 160px;
+
+      &::placeholder {
+        color: $s-black;
+      }
     }
   }
 }

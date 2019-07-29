@@ -17,7 +17,6 @@
     &--contacts {
       :nth-child(2) {
         position: relative;
-        // background-color: red;
 
         &::after {
           content: "";
@@ -27,7 +26,7 @@
           bottom: 0;
           right: 0;
           background-color: $s-gray-darker;
-          background-image: url(../img/icon-phone.svg);
+          background-image: url("../img/icon-phone.svg");
           background-repeat: no-repeat;
           background-position: center;
         }
@@ -44,7 +43,7 @@
           bottom: 0;
           right: 0;
           background-color: $s-gray-darker;
-          background-image: url(../img/icon-mail.svg);
+          background-image: url("../img/icon-mail.svg");
           background-repeat: no-repeat;
           background-position: center;
         }
@@ -146,7 +145,7 @@
     }
   }
 
-  .form__item--comment {
+  &--comment {
     width: 100%;
     border: none;
     padding-bottom: 50px;

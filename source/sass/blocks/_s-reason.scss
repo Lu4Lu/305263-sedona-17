@@ -15,10 +15,6 @@
       background-repeat: no-repeat;
       background-position: 50% top;
       background-size: 768px 35px;
-
-      .reason__wrapper {
-        padding-top: 60px;
-      }
     }
 
     .reason__title,
@@ -89,8 +85,7 @@
       flex-direction: column;
       align-self: center;
       flex-grow: 1;
-      padding-top: 45px;
-      padding-bottom: 50px;
+      padding: 0;
       max-height: 255px;
     }
 
@@ -98,15 +93,14 @@
       margin: 0;
       padding: 0;
       max-width: 66.666%;
-      justify-content: flex-end;
       max-height: none;
     }
 
     .reason__photo {
       overflow: hidden;
       background-size: cover;
-      max-height: none;
-      width: 100%;
+      // max-height: none;
+      // width: auto;
       height: auto;
     }
 
@@ -138,7 +132,6 @@
       display: flex;
       flex-direction: row;
       flex-wrap: wrap;
-      // align-items: stretch;
       align-content: stretch;
 
       .reason__wrapper {
@@ -162,6 +155,11 @@
         padding-left: 50px;
         padding-right: 50px;
       }
+
+      & picture {
+        overflow: hidden;
+        max-height: 265px;
+      }
     }
 
     &--gray {
@@ -169,6 +167,11 @@
       align-content: stretch;
       flex-wrap: nowrap;
       max-width: 33.33%;
+
+      .reason__wrapper {
+        padding-top: 50px;
+        padding-bottom: 50px;
+      }
     }
   }
 }

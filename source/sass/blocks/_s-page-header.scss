@@ -29,6 +29,22 @@
       background-color: $s-blue;
       border-top: 1px solid $s-btn-inner;
       border-bottom: 1px solid $s-btn-shadow;
+
+      &:hover {
+        color: $s-blue;
+      }
+
+      &:focus {
+        color: $s-menu-down;
+      }
+
+      &--active {
+        color: $s-menu-active;
+
+        &:hover {
+          color: $s-menu-active-hover;
+        }
+      }
     }
 
     .logo {

@@ -159,6 +159,10 @@
       & picture {
         overflow: hidden;
         max-height: 265px;
+
+        .reason_photo {
+          object-fit: cover;
+        }
       }
     }
 

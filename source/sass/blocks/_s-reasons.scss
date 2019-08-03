@@ -50,17 +50,11 @@
     }
 
     .reasons__intro {
+      padding-bottom: 55px;
+
       .reasons__title {
         font-size: $font-size-21px;
       }
     }
   }
 }
-
-// @media (min-width: $desktop-width) {
-//   .reasons {
-//     display: flex;
-//     flex-direction: column;
-//     max-width: 1200px;
-//   }
-// }

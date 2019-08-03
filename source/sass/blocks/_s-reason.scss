@@ -29,6 +29,19 @@
     background-color: $s-gray;
     color: $s-text-black;
     margin: 0;
+
+    .reason__wrapper {
+      margin-left: 40px;
+      margin-right: 40px;
+      border-top: 1px solid $s-gray-darker;
+    }
+
+    .reason__title,
+    .reason__number,
+    .reason__text {
+      padding-left: 0;
+      padding-right: 0;
+    }
   }
 
   .reason__wrapper {
@@ -99,8 +112,6 @@
     .reason__photo {
       overflow: hidden;
       background-size: cover;
-      // max-height: none;
-      // width: auto;
       height: auto;
     }
 
@@ -173,6 +184,7 @@
       max-width: 33.33%;
 
       .reason__wrapper {
+        border: none;
         padding-top: 50px;
         padding-bottom: 50px;
       }

@@ -1,25 +1,25 @@
 .gallery {
   background-color: $s-white;
+}
 
-  .gallery__intro {
-    text-align: center;
-    color: $s-text-black;
-    padding: 45px 20px 35px 20px;
-    text-transform: uppercase;
-  }
+.gallery__intro {
+  text-align: center;
+  color: $s-text-black;
+  padding: 45px 20px 35px 20px;
+  text-transform: uppercase;
+}
 
-  .gallery__title {
-    font-family: $font-family-bold;
-    font-size: $font-size-18px;
-    margin: 0;
-    margin-bottom: 30px;
-  }
+.gallery__title {
+  font-family: $font-family-bold;
+  font-size: $font-size-18px;
+  margin: 0;
+  margin-bottom: 30px;
+}
 
-  .gallery__description {
-    font-size: $font-size-root;
-    line-height: $line-height-longer;
-    margin: 0;
-  }
+.gallery__description {
+  font-size: $font-size-root;
+  line-height: $line-height-longer;
+  margin: 0;
 }
 
 @media (min-width: $tablet-width) {
@@ -28,44 +28,50 @@
     flex-direction: column;
     justify-items: center;
     padding-bottom: 75px;
+  }
 
-    .gallery__intro {
-      padding: 0;
-      padding-top: 75px;
-      padding-bottom: 75px;
-      max-width: 440px;
-      margin: 0 auto;
+  .gallery__intro {
+    padding: 0;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    max-width: 440px;
+    margin: 0 auto;
 
-      .gallery__title {
-        font-size: $font-size-30px;
-      }
+    .gallery__title {
+      font-size: $font-size-30px;
+    }
+  }
+
+  .gallery__wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    padding: 0 60px;
+
+    &:first-child {
+      width: 100%;
     }
 
-    .gallery__wrapper {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: flex-start;
-      padding: 0 60px;
-
-      &:first-child {
-        width: 100%;
-      }
-
-      &:nth-child(3) {
-        .photo__info {
-          background-color: red;
-        }
+    :nth-child(odd) {
+      .photo__info {
+        background-color: $s-gray-wtf;
       }
     }
   }
 }
 
 @media (min-width: $desktop-width) {
-  .gallery {
-    .gallery__intro {
-      padding-top: 115px;
-      max-width: 440px;
-      margin: 0 auto;
+  .gallery__intro {
+    padding-top: 115px;
+    max-width: 440px;
+    margin: 0 auto;
+  }
+
+  .gallery__wrapper {
+    :nth-child(odd) {
+      .photo__info {
+        background-color: rgba(0, 0, 0, 0.3);
+      }
     }
   }
 }

@@ -24,7 +24,7 @@ $s-gray-darkest: #333333;
 $s-gray-wtf: #eaeaea;
 
 $s-blue: #81b3d2;
-$s-btn-blue-hover: #889ec0;
+$s-btn-blue-hover: #669ec0;
 $s-btn-blue-down: #5498bd;
 $s-btn-disabled: #e5e5e5;
 
@@ -95,3 +95,8 @@ $input-btn-border-width: 1px !default; // For form controls and buttons
 $mobile-width: 320px;
 $tablet-width: 768px;
 $desktop-width: 1200px;
+
+//Resolutions
+//
+$retina-dpi: 144dpi;
+$retina-dppx: 1.5dppx;

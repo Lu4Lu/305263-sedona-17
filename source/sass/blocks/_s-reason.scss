@@ -15,10 +15,7 @@
       background-repeat: no-repeat;
       background-position: 50% top;
       background-size: auto;
-      // width: 100%;
-      // height: auto;
-      // object-fit: cover;
-      padding-top: 35px;
+      padding-top: 36px;
     }
 
     .reason__title,
@@ -75,8 +72,8 @@
   .reason__title,
   .reason__number,
   .reason__text {
-    padding-left: 40px;
-    padding-right: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 
   picture {
@@ -94,6 +91,17 @@
     background-color: $s-white;
   }
 }
+
+// @media (max-width: 768px) {
+//   .reason--blue {
+//     &:first-child {
+//       background-image: url("../img/svg/bg-triangle.svg");
+//       background-repeat: no-repeat;
+//       background-position: 50% top;
+//       background-size: 768px 35px;
+//     }
+//   }
+// }
 
 @media (min-width: $tablet-width) {
   .reason {

@@ -3,13 +3,13 @@
 }
 
 body {
-  margin: 0;
+  margin: 0 auto;
   padding: 0;
+  min-width: 320px;
 }
 
 @media (min-width: $desktop-width) {
   body {
-    // padding: 0 40px;
     max-width: 1200px;
     background-color: $s-gray;
     margin: 0 auto;

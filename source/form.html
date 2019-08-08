@@ -4,10 +4,13 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Седона</title>
-  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 
 <body>
+  <div style="display:none">
+    <include src="build/img/sprite.svg"></include>
+  </div>
   <header class="page-header">
     <nav class="main-nav main-nav--opened main-nav--nojs">
       <ul class="main-nav__list">
@@ -22,7 +25,7 @@
             <picture>
               <source media="(min-width: 1200px)" srcset="img/svg/logo-sedona-desktop.svg">
               <source media="(min-width: 768px)" srcset="img/svg/logo-sedona-tablet.svg">
-              <img src="img/svg/logo-sedona-mobile.svg" alt="Герб Седоны" width="188" height="96" class="logo__image">
+              <img src="img/svg/logo-sedona-mobile.svg" alt="Герб Седоны" width="102" height="83" class="logo__image">
             </picture>
           </a>
         </li>
@@ -31,6 +34,7 @@
       </ul>
     </nav>
   </header>
+
   <main class="page-main">
     <section class="promo promo--cut">
       <div class="promo__wrapper">
@@ -55,19 +59,19 @@
             <p class="form__element">
               <label class="form__label" for="name">Имя<sup>*</sup>:</label>
               <input class="form__input" id="name" name="name" type="text" placeholder="Петр" minlength="1"
-                maxlength="30" required=""></label>
+                maxlength="30" required="">
             </p>
 
             <p class="form__element">
               <label class="form__label" for="last-name">Фамилия<sup>*</sup>:</label>
               <input class="form__input" id="last-name" name="last-name" type="text" placeholder="Иванов" minlength="1"
-                maxlength="30" required=""></label>
+                maxlength="30" required="">
             </p>
 
             <p class="form__element">
               <label class="form__label" for="father-name">Отчество:</label>
               <input class="form__input" id="father-name" name="father-name" type="text" placeholder="Александрович"
-                minlength="1" maxlength="30" required=""></label>
+                minlength="1" maxlength="30" required="">
             </p>
           </fieldset>
 
@@ -92,7 +96,7 @@
 
             <p class="form__element">
               <label class="form__radio form-radio--large" for="form-good">
-                <input class="visually-hidden" type="radio" name="feeling" value="good" id="form-good" checked>
+                <input class="visually-hidden" type="radio" name="feeling" value="good" id="form-good" checked="">
                 <span class="form__indicator"></span>Скорее положительное
               </label>
             </p>
@@ -101,6 +105,7 @@
               <label class="form__radio form-radio--large" for="form-bad">
                 <inputclass="visually-hidden" type="radio" name="feeling" value="bad" id="form-bad">
                   <span class="form__indicator"></span>Скорее отрицательное
+                </inputclass="visually-hidden">
               </label>
             </p>
             <p class="form__element">
@@ -118,20 +123,21 @@
               <p class="form__element">
                 <label class="form__sight  form__sight--large" for="sight-bridge">
                   <input type="checkbox" name="sight-bridge" value="bridge" id="sight-bridge" class="visually-hidden"
-                    checked>
+                    checked="">
                   <span class="form__indicator"></span>Мост Дьявола
                 </label>
               </p>
               <p class="form__element">
                 <label class="form__sight form__sight--large" for="sight-mountain">
                   <input type="checkbox" name="sight-mountain" value="mountain" id="sight-mountain"
-                    class="visually-hidden" checked>
+                    class="visually-hidden" checked="">
                   <span class="form__indicator"></span>Гора-Колокол
                 </label>
               </p>
               <p class="form__element">
                 <label class="form__sight form__sight--large" for="sight-park">
-                  <input type="checkbox" name="sight-park" value="park" id="sight-park" class="visually-hidden" checked>
+                  <input type="checkbox" name="sight-park" value="park" id="sight-park" class="visually-hidden"
+                    checked="">
                   <span class="form__indicator"></span>Слайд-парк
                 </label>
               </p>
@@ -171,7 +177,8 @@
             <span class="visually-hidden">Twitter</span>
             <svg fill="#fff" width="18" height="15">
               <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z" />
+                d="M11.283.153c1.736-.484 3.074.264 3.685 1.15.694-.225 1.372-.47 2.072-.69-.004.841-.538 1.478-.883 1.728.704.165 1.343-.481 1.343-.481-.175.977-1.035 1.746-1.611 1.977-.239 6.592-3.272 10.956-10.382 10.823h-.46c-.422 0-4.29-.45-5.047-1.843 2.341.192 4.011-.412 4.835-1.15-.989-.293-2.761-.464-3.07-2.881.362.105.583.223 1.228.117C1.757 8.067.385 7.366.461 5.218c.294.319 1.1.523 1.381.461C1.117 5.444-.188 2.398.921.843 2.794 2.655 4.769 4.364 8.29 4.528c.216-2.24 1.171-3.74 2.993-4.375z">
+              </path>
             </svg>
 
           </a>
@@ -182,7 +189,8 @@
             <span class="visually-hidden">Facebook</span>
             <svg fill="#fff" width="9" height="19">
               <path
-                d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z" />
+                d="M6.275 3.356h2.398V0H5.795C2.656.181 1.54 2.387 1.948 6.114H0v3.518h1.959v9.312h3.837V9.632h2.857V6.114H5.787c-.022-1.045-.037-2.405.488-2.758z">
+              </path>
             </svg>
           </a>
         </li>
@@ -192,7 +200,8 @@
             <span class="visually-hidden">Youtube</span>
             <svg fill="#fff" width="20" height="14">
               <path
-                d="M17.145 0H2.835A2.842 2.842 0 000 2.835v8.345a2.842 2.842 0 002.835 2.835h14.31a2.842 2.842 0 002.835-2.835V2.835A2.844 2.844 0 0017.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z" />
+                d="M17.145 0H2.835A2.842 2.842 0 000 2.835v8.345a2.842 2.842 0 002.835 2.835h14.31a2.842 2.842 0 002.835-2.835V2.835A2.844 2.844 0 0017.145 0zM7.036 10.392V3.623l6.769 3.384-6.769 3.385z">
+              </path>
             </svg>
           </a>
         </li>

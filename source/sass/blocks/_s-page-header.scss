@@ -14,6 +14,14 @@
       display: block;
       width: 100%;
       padding: 0;
+
+      // &:hover {
+      //   background-color: $s-btn-blue-hover;
+      // }
+
+      // &:focus {
+      //   color: $s-menu-down;
+      // }
     }
 
     .main-nav__link {
@@ -31,20 +39,20 @@
       border-bottom: 1px solid $s-btn-shadow;
 
       &:hover {
-        color: $s-blue;
+        background-color: $s-btn-blue-hover;
       }
 
       &:focus {
-        color: $s-menu-down;
+        background-color: $s-btn-blue-down;
       }
 
-      &--active {
-        color: $s-menu-active;
+      // &--active {
+      //   // color: $s-menu-active;
 
-        &:hover {
-          color: $s-menu-active-hover;
-        }
-      }
+      //   // &:hover {
+      //   //   color: $s-menu-active-hover;
+      //   // }
+      // }
     }
 
     .logo {
@@ -63,7 +71,7 @@
     .main-nav__list {
       .main-nav__toggle {
         position: absolute;
-        top: 15px;
+        top: 20px;
         right: 20px;
         margin: 0;
         padding: 0;
@@ -71,7 +79,7 @@
         background-color: transparent;
         width: 25px;
         height: 20px;
-        transition: 0.3s;
+        transition: 0.1s;
         cursor: pointer;
         outline: 0;
       }
@@ -81,7 +89,7 @@
         display: block;
         top: 10px;
         right: 0;
-        background-color: $s-white;
+        background-color: transparent;
         width: 25px;
         height: 4px;
         border: none;
@@ -122,7 +130,7 @@
 
       .main-nav__toggle {
         position: absolute;
-        top: 15px;
+        top: 20px;
         right: 20px;
         margin: 0;
         padding: 0;
@@ -130,7 +138,7 @@
         background-color: transparent;
         width: 25px;
         height: 20px;
-        transition: 0.3s;
+        transition: 0.1s;
         cursor: pointer;
         outline: 0;
       }
@@ -138,7 +146,7 @@
       .main-nav__toggle-icon {
         position: absolute;
         display: block;
-        top: 10px;
+        top: 8px;
         background-color: $s-blue;
         width: 25px;
         height: 4px;
@@ -149,7 +157,7 @@
           width: 25px;
           height: 4px;
           background-color: $s-blue;
-          bottom: 10px;
+          bottom: 8px;
           right: 0;
         }
 
@@ -159,7 +167,7 @@
           width: 25px;
           height: 4px;
           background-color: $s-blue;
-          top: 10px;
+          top: 8px;
           right: 0;
         }
       }
@@ -224,5 +232,12 @@
         order: 0;
       }
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .logo__image {
+    width: 188px;
+    height: 96px;
   }
 }

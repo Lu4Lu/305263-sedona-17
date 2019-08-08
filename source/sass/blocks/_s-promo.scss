@@ -2,20 +2,29 @@
   padding: 0;
   text-align: center;
   background-color: $s-blue;
-  background-image: url("../img/svg/bg-intro-triangle-mobile.svg"),
-    url("../img/bg-back-mobile@1x.jpg"),
-    url("../img/bg-back-mobile@1x.webp"),
-    url("../img/bg-back-mobile@2x.jpg"),
-    url("../img/bg-back-mobile@2x.webp");
+  background-image: url("../img/bg-back-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 50% bottom;
+  background-position: 50% top;
   background-size: cover;
 
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/bg-back-mobile@2x.jpg");
+  }
+
+  .promo__wrapper {
+    background-image: url("../img/svg/bg-intro-triangle-desktop.svg");
+    background-repeat: no-repeat;
+    background-position: 50% bottom;
+    background-size: 1200px;
+    object-fit: cover;
+  }
+
   &--full {
-    min-height: 390px;
+    max-height: 390px;
 
     .promo__wrapper {
       padding-top: 90px;
+      padding-bottom: 81px;
     }
 
     .promo__logo {
@@ -29,6 +38,8 @@
 
     .promo__wrapper {
       padding-top: 50px;
+      padding-bottom: 66px;
+      background-position: 50% bottom;
     }
 
     .promo__logo {
@@ -38,25 +49,37 @@
   }
 }
 
+@media (min-width: 700px) {
+  .promo {
+    .promo__wrapper {
+      background-image: url("../img/svg/bg-intro-triangle-desktop.svg");
+      background-repeat: no-repeat;
+      background-position: 50% bottom;
+      background-size: 1200px;
+    }
+  }
+}
+
 @media (min-width: $tablet-width) {
   .promo {
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-image: url("../img/svg/bg-intro-triangle-desktop.svg"),
-      url("../img/bg-back-desktop@1x.jpg"),
-      url("../img/bg-back-desktop@2x.jpg"),
+    background-image: url("../img/bg-back-desktop@1x.jpg"),
       url("../img/bg-back-desktop@2x.webp");
 
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-back-desktop@2x.jpg");
+    }
+
     &--full {
-      min-height: 515px;
+      max-height: 515px;
 
       .promo__wrapper {
-        padding-top: 80px;
+        padding-top: 75px;
+        padding-bottom: 85px;
       }
 
       .promo__logo {
-        width: 520px;
-        height: 360px;
+        width: 460px;
+        height: 350px;
       }
     }
 
@@ -80,11 +103,6 @@
     &--full {
       .promo__wrapper {
         padding-top: 80px;
-      }
-
-      .promo__logo {
-        width: 460px;
-        height: 350px;
       }
     }
 

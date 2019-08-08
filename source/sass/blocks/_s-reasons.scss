@@ -9,7 +9,7 @@
     margin: 0 auto;
     max-width: 520px;
     color: $s-text-black;
-    padding: 45px 30px 35px 30px;
+    padding: 40px 30px 5px 30px;
     text-transform: uppercase;
 
     .reasons__title {
@@ -22,6 +22,7 @@
 
     .reasons__description {
       font-size: $font-size-root;
+      line-height: $line-height-longer;
       margin: 0;
     }
   }
@@ -50,10 +51,11 @@
     }
 
     .reasons__intro {
-      padding-bottom: 55px;
+      padding: 50px 30px 55px 30px;
 
       .reasons__title {
         font-size: $font-size-21px;
+        line-height: $line-height-smaller;
       }
     }
   }

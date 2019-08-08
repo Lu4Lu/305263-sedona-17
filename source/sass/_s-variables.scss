@@ -22,6 +22,7 @@ $s-gray: #f2f2f2;
 $s-gray-darker: #e5e5e5;
 $s-gray-darkest: #333333;
 $s-gray-wtf: #eaeaea;
+$s-gray-wtf2: #d7d7d7;
 
 $s-blue: #81b3d2;
 $s-btn-blue-hover: #669ec0;
@@ -58,12 +59,12 @@ $margin-720: 720px;
 
 // Typography
 //
-$font-family-sans-serif: "PTSans", helvetica, arial, sans-serif !default;
+$font-family-sans-serif: "PTSans", helvetica, arial, sans-serif;
 $font-family-bold: "PTSansBold";
 $font-family-text: arial, sans-serif;
 
-$font-size-root: 14px !default;
-$font-size-root-unitless: 14; // Do the (rem) math with the scale
+$font-size-root: 14px;
+$font-size-root-unitless: 14;
 
 $font-size-h1: 38px;
 $font-size-h2: 24px;

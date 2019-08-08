@@ -9,6 +9,11 @@
   &--blue {
     background-color: $s-blue;
 
+    .reason__wrapper {
+      padding-top: 45px;
+      padding-bottom: 45px;
+    }
+
     &:first-child {
       margin-top: -1px;
       background-image: url("../img/svg/bg-triangle.svg");
@@ -32,9 +37,11 @@
     margin: 0;
 
     .reason__wrapper {
-      margin-left: 40px;
-      margin-right: 40px;
-      border-top: 1px solid $s-gray-darker;
+      margin-left: 30px;
+      margin-right: 30px;
+      padding-top: 30px;
+      padding-bottom: 30px;
+      border-top: 1px solid $s-gray-wtf2;
     }
 
     .reason__title,
@@ -43,11 +50,6 @@
       padding-left: 0;
       padding-right: 0;
     }
-  }
-
-  .reason__wrapper {
-    padding-top: 45px;
-    padding-bottom: 45px;
   }
 
   .reason__title {
@@ -66,14 +68,8 @@
 
   .reason__text {
     font-size: $font-size-root;
+    line-height: $line-height;
     margin: 0;
-  }
-
-  .reason__title,
-  .reason__number,
-  .reason__text {
-    padding-left: 30px;
-    padding-right: 30px;
   }
 
   picture {
@@ -91,17 +87,6 @@
     background-color: $s-white;
   }
 }
-
-// @media (max-width: 768px) {
-//   .reason--blue {
-//     &:first-child {
-//       background-image: url("../img/svg/bg-triangle.svg");
-//       background-repeat: no-repeat;
-//       background-position: 50% top;
-//       background-size: 768px 35px;
-//     }
-//   }
-// }
 
 @media (min-width: $tablet-width) {
   .reason {
@@ -178,13 +163,13 @@
       .reason__title,
       .reason__number,
       .reason__text {
-        padding-left: 50px;
-        padding-right: 50px;
+        padding-left: 45px;
+        padding-right: 45px;
       }
 
       & picture {
         overflow: hidden;
-        max-height: 265px;
+        max-height: 255px;
 
         .reason_photo {
           object-fit: cover;
@@ -200,15 +185,25 @@
 
       .reason__wrapper {
         border: none;
-        padding-top: 50px;
-        padding-bottom: 50px;
+        margin: 0;
+        padding: 50px 60px;
       }
 
-      .reason__title,
       .reason__number,
       .reason__text {
         padding-left: 0;
         padding-right: 0;
+      }
+
+      .reason__title {
+        margin: 0 auto;
+        padding: 0;
+        margin-bottom: 15px;
+        max-width: 135px;
+      }
+
+      .reason__number {
+        margin-bottom: 25px;
       }
     }
   }
@@ -216,13 +211,6 @@
 
 @media (min-width: $desktop-width) {
   .reason {
-    .reason__title,
-    .reason__number,
-    .reason__text {
-      padding-left: 60px;
-      padding-right: 60px;
-    }
-
     &--blue {
       .reason__title,
       .reason__number,

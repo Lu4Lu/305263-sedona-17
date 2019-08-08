@@ -64,13 +64,13 @@
     flex-direction: row;
     flex-wrap: nowrap;
     margin: 0;
-    padding: 60px 20px 60px 20px;
+    padding: 60px 0 60px 0;
 
     .sublist__item {
       text-align: center;
       padding: 0;
-      padding-left: 30px;
-      padding-right: 50px;
+      padding-left: 45px;
+      padding-right: 45px;
       width: 33.33%;
 
       &:nth-child(2) {
@@ -100,8 +100,8 @@
     .sublist__title {
       font-size: $font-size-21px;
       padding: 0;
-      margin-top: 30px;
-      margin-bottom: 30px;
+      margin-top: 25px;
+      margin-bottom: 20px;
     }
 
     .sublist__description {
@@ -113,7 +113,7 @@
 
 @media (min-width: $desktop-width) {
   .sublist {
-    padding: 60px 0 85px 0;
+    padding: 60px 0 80px 0;
 
     .sublist__item {
       padding-left: 70px;

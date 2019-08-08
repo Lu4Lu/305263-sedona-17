@@ -51,10 +51,11 @@
     }
 
     .reasons__intro {
-      padding-bottom: 55px;
+      padding: 50px 30px 55px 30px;
 
       .reasons__title {
         font-size: $font-size-21px;
+        line-height: $line-height-smaller;
       }
     }
   }

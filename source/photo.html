@@ -8,11 +8,6 @@
 </head>
 
 <body>
-  <!-- <div style="margin: 0 auto">
-    <img src="img/preview/sedona-photo-mobile.jpg"
-      style="opacity: 0.3; position: absolute; top: -10px; left: 0; z-index: 100; ">
-  </div> -->
-
   <div style="display:none">
     <include src="build/img/sprite.svg"></include>
   </div>
@@ -189,39 +184,41 @@
       </div>
 
       <div class="presentation__video video">
-        <picture class="video__img">
-          <source srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x" media="(min-width: 1200px)">
-          <source srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x" media="(min-width: 768px)">
-          <img src="img/video-mobile@1x.jpg" srcset="img/video-mobile@2x.jpg 2x" alt="Видео">
+        <picture>
+          <source media="(min-width: 649px)" srcset="img/video-desktop@1x.jpg 1x, img/video-desktop@2x.jpg 2x">
+          <source media="(min-width: 400px)" srcset="img/video-tablet@1x.jpg 1x, img/video-tablet@2x.jpg 2x">
+          <source media="(max-width: 399px)" srcset="img/video-mobile@2x.jpg 2x">
+          <img class="video__img" src="img/video-mobile@1x.jpg" alt="Видео">
         </picture>
         <div class="video__player">
-          <div class="video__wraper">
-            <div class="video__range"></div>
+
+          <div class="video__timeline-wrapper">
+            <div class="video__timeline"></div>
             <div class="video__marker"></div>
           </div>
-          <div class="video__btns">
-            <btn class="video__btn video__btn--replay" type="btn">
-              <svg class="replay__icon" width="16" height="20">
-                <use xlink:href="#icon-video-replay"></use>
-              </svg>
-              <span class="visually-hidden">Воспроизвести снова</span>
-            </btn>
-            <btn class="video__btn video__btn--сс" type="btn">
-              <svg class="replay__icon" width="32" height="20">
-                <use xlink:href="#icon-video-subtitles"></use>
-              </svg>
-              <span class="visually-hidden">Включить субтитры</span>
-            </btn>
-            <btn class="video__btn video__btn--full-screen" type="btn">
-              <svg class="replay__icon" width="20" height="20">
-                <use xlink:href="#icon-video-fullscreen"></use>
-              </svg>
-              <span class="visually-hidden">Развернуть на весь экран</span>
-            </btn>
+          <div class="video__btn video__btn--replay">
+            <svg class="video__icon" width="16" height="20">
+              <use xlink:href="#icon-video-replay"></use>
+            </svg>
+            <span class="visually-hidden">Воспроизвести снова</span></a>
           </div>
+          <div class="video__btn video__btn--сс">
+            <svg class="video__icon" width="32" height="20">
+              <use xlink:href="#icon-video-subtitles"></use>
+            </svg>
+            <span class="visually-hidden">Включить субтитры</span>
+          </div>
+          <div class="video__btn video__btn--full-screen">
+            <svg class="video__icon" width="20" height="20">
+              <use xlink:href="#icon-video-fullscreen"></use>
+            </svg>
+            <span class="visually-hidden">Развернуть на весь экран</span>
+          </div>
+
         </div>
       </div>
     </section>
+
   </main>
 
 

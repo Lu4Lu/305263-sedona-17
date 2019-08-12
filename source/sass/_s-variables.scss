@@ -17,6 +17,7 @@
 // Colors
 //
 $s-white: #ffffff;
+$s-white-20: rgba(255, 255, 255, 0.2);
 
 $s-gray: #f2f2f2;
 $s-gray-darker: #e5e5e5;
@@ -29,6 +30,8 @@ $s-btn-blue-hover: #669ec0;
 $s-btn-blue-down: #5498bd;
 $s-btn-disabled: #e5e5e5;
 
+$s-replay-icon: #5c6870;
+
 $s-black: #000000;
 $s-text-black: #333333;
 $s-text-black-lighter: #804e43;
@@ -37,6 +40,7 @@ $s-text-black-lightest: rgba(118, 99, 87, 0.3);
 $s-btn-inner: rgba(255, 255, 255, 0.2);
 $s-btn-shadow: rgba(1, 1, 1, 0.2);
 $s-menu-down: rgba(0, 0, 0, 0.3);
+$s-black-60: rgba(0, 0, 0, 0.6);
 $s-menu-active: #766357;
 $s-menu-active-hover: #604e43;
 

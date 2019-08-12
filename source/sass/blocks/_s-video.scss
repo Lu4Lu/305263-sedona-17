@@ -1,6 +1,7 @@
 .video {
   display: flex;
   flex-direction: column;
+  margin-bottom: 50px;
 
   picture {
     height: 200px;
@@ -68,6 +69,7 @@
   .video {
     padding-left: 60px;
     padding-right: 60px;
+    margin-bottom: 40px;
 
     picture {
       height: 500px;
@@ -90,7 +92,6 @@
 
   .video__timeline-wrapper {
     margin-top: 0;
-    // order: 1;
     background-color: transparent;
 
     .video__timeline {
@@ -120,5 +121,6 @@
     // background-color: $s-white;
     padding-left: 200px;
     padding-right: 200px;
+    margin-bottom: 85px;
   }
 }
